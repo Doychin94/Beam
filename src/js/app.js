@@ -5,3 +5,5 @@
 
 // Init Modules
 // stickyHeader();
+
+$(document).foundation();

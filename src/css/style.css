@@ -5,18 +5,24 @@
 :root {
 	--c-white:  #fff;
 	--c-black:  #000;
-	--c-grey:  #636363;
-	--c-light-blue:  #DEE3EF;
-	--c-blue:  #000248;
-	--c-dark:  #222222;
+	--c-grey:  #F8F9FE;
+	--c-pink:  #DCD7FF;
+	--c-purple:  #8274E9;
+	--c-purple-dark:  #5955b1;
+	--c-dark:  #333574;
 	--c-orange:  #EE5F38;
-	--c-green:  #48CDA0;
-	--c-pink:  #EDBCDC;
-
+	--c-green:  #79F1D9;
+	--c-green-2:  #4EDDE3;
+	--c-blue:  #5ACAF4;
+	--c-blue-dark:  #2D6C8D;
+	--c-base:  #616161;
 	--t-duration: .4s;
 
-	 --f-family-heebo: "Heebo", sans-serif;
-	 --f-family-rubik: "Rubik", sans-serif;
+	--fw-base:  400;
+	--fs-base:  1.8rem;
+	--lh-base:  1.2;
+
+	 --f-family-base: "Lexend Deca", sans-serif;
 }
 
 /* ------------------------------------------------------------ *\
@@ -37,55 +43,51 @@ body {
 	min-width: 320px;
 	margin: 0;
 	background: var(--c-white);
-	font-family: var(--f-family-rubik);
-	font-weight: 400;
-	font-size: 1.6rem;
-	line-height: 1.63;
-	color: var(--c-grey);
+	font-family: var(--f-family-base);
+	font-weight: var(--fw-base);;
+	font-size: var(--fs-base);;
+	line-height: var(--lh-base);;
+	color: var(--c-base);
 }
 
 .h1,
 h1 {
-	font-family: var(--f-family-heebo);
-	font-size: 6rem;
-	line-height: 1.5;
+	font-size: 4.8rem;
+	line-height: 1.041;
+	font-weight: 800;
 }
 
 .h2,
 h2 {
-	font-family: var(--f-family-heebo);
-	font-size: 4.8rem;
-	line-height: 1.2;
-	color: var(--c-blue);
+	font-size: 3.8rem;
+	line-height: 1.315;
+	font-weight: 800;
 }
 
 .h3,
 h3 {
-	font-family: var(--f-family-heebo);
-	font-size: 3.2rem;
-	line-height: 1.5;
+	font-size: 2.8rem;
+	line-height: 1.071;
+	font-weight: 800;
 }
 
 .h4,
 h4 {
-	font-family: var(--f-family-heebo);
-	font-size: 2.5rem;
-	line-height: 1.4;
+	font-size: 2.4rem;
+	line-height: 1.2;
 }
 
 .h5,
 h5 {
-	font-family: var(--f-family-heebo);
-	font-size: 2.4rem;
+	font-size: 2rem;
 	line-height: 1.2;
 }
 
 .h6,
 h6 {
-	font-family: var(--f-family-heebo);
-	font-size: 2.2rem;
-	font-weight: 500;
-	line-height: 1.5;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 400;
 }
 
 img {
@@ -120,6 +122,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	color: currentColor;
 }
 
 /* ------------------------------------------------------------ *\
@@ -133,11 +136,125 @@ a:hover {
 }
 
 /* ------------------------------------------------------------ *\
-		Shell
+	Grid container
 \* ------------------------------------------------------------ */
 
-.shell {
-	max-width: 116.2rem;
+.grid-container {
+	width: 100%;
+	max-width: 117rem;
 	margin: 0 auto;
 	padding: 0 1.5rem;
+}
+
+/* grid container small */
+.grid-container--small {
+	/* max-width: 117rem; */
+}
+
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+.header {
+	padding: 4rem 0 4.2rem;
+	overflow: hidden;
+}
+
+.header__menu {
+	margin-left: 2rem;
+}
+
+.header .header__bar {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1.7rem;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+.logo {
+	position: relative;
+	width: 100%;
+	max-width:22.9rem;
+}
+
+.logo img {
+	width: 100%;
+}
+
+/* ------------------------------------------------------------ *\
+	Nav secondary
+\* ------------------------------------------------------------ */
+.nav-secondary {
+	color: var(--c-purple);
+}
+ 
+.nav-secondary > ul {
+	display: flex;
+	list-style-type: none;
+	gap: 2.4rem;
+}
+
+.nav-secondary > ul > li {
+	position: relative;
+	padding: 0 1rem;
+}
+/* is current*/
+.nav-secondary > ul > li.is-current {
+	font-weight: 700;
+	color: var(--c-white);
+	isolation: isolate;
+}
+
+.nav-secondary > ul > li.is-current:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: -2rem;
+	top: -10rem;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: var(--c-purple);
+}
+
+.nav-secondary > ul > li > a {
+	text-decoration: none;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.nav-secondary > ul > li > a:hover {
+	opacity: .8;
+}
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+.nav {
+	color: var(--c-purple);
+}
+ 
+.nav > ul {
+	display: flex;
+	list-style-type: none;
+	gap: 3.1rem;
+}
+
+.nav > ul > li {
+	position: relative;
+	padding: 0 1rem;
+}
+/* is current*/
+.nav > ul > li.is-current {
+	font-weight: 700;
+}
+
+.nav > ul > li > a {
+	text-decoration: none;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.nav > ul > li > a:hover {
+	opacity: .8;
 }

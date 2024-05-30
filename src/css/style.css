@@ -8,6 +8,7 @@
 	--c-grey:  #F8F9FE;
 	--c-pink:  #DCD7FF;
 	--c-purple:  #8274E9;
+	--c-purple-2:  #6051D5;
 	--c-purple-dark:  #5955b1;
 	--c-dark:  #333574;
 	--c-orange:  #EE5F38;
@@ -55,6 +56,7 @@ h1 {
 	font-size: 4.8rem;
 	line-height: 1.041;
 	font-weight: 800;
+	font-family: var(--f-family-base);
 }
 
 .h2,
@@ -62,6 +64,7 @@ h2 {
 	font-size: 3.8rem;
 	line-height: 1.315;
 	font-weight: 800;
+	font-family: var(--f-family-base);
 }
 
 .h3,
@@ -69,18 +72,21 @@ h3 {
 	font-size: 2.8rem;
 	line-height: 1.071;
 	font-weight: 800;
+	font-family: var(--f-family-base);
 }
 
 .h4,
 h4 {
 	font-size: 2.4rem;
 	line-height: 1.2;
+	font-family: var(--f-family-base);
 }
 
 .h5,
 h5 {
 	font-size: 2rem;
 	line-height: 1.2;
+	font-family: var(--f-family-base);
 }
 
 .h6,
@@ -88,6 +94,7 @@ h6 {
 	font-size: 1.8rem;
 	line-height: 1.2;
 	font-weight: 400;
+	font-family: var(--f-family-base);
 }
 
 img {
@@ -138,7 +145,6 @@ a:hover {
 /* ------------------------------------------------------------ *\
 	Grid container
 \* ------------------------------------------------------------ */
-
 .grid-container {
 	width: 100%;
 	max-width: 117rem;
@@ -146,9 +152,53 @@ a:hover {
 	padding: 0 1.5rem;
 }
 
-/* grid container small */
-.grid-container--small {
-	/* max-width: 117rem; */
+/* ------------------------------------------------------------ *\
+	Btn primary
+\* ------------------------------------------------------------ */
+.btn-primary {
+	appearance: none;
+	display: inline-block;
+	background-color: var(--c-purple-2);
+	border-radius: 2.5rem;
+	padding: 0.8rem 3.3rem 0.7rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--c-white);
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.btn-primary:hover {
+	opacity: .8;
+	color: var(--c-purple-2);
+}
+
+/* btn primary white */
+.btn-primary--white {
+	background-color: var(--c-white);
+	color: var(--c-purple-2);
+}
+
+/* ------------------------------------------------------------ *\
+	Btn secondary
+\* ------------------------------------------------------------ */
+.btn-secondary {
+	appearance: none;
+	display: inline-block;
+	border-radius: 2.5rem;
+	padding: 0.7rem 3.4rem 0.6rem;
+	border: .1rem solid var(--c-white);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: var(--c-white);
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.btn-secondary:hover {
+	opacity: .8;
 }
 
 /* ------------------------------------------------------------ *\
@@ -169,7 +219,6 @@ a:hover {
 	margin-bottom: 1.7rem;
 }
 
-
 /* ------------------------------------------------------------ *\
 	Logo
 \* ------------------------------------------------------------ */
@@ -177,6 +226,11 @@ a:hover {
 	position: relative;
 	width: 100%;
 	max-width:22.9rem;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.logo:hover {
+	opacity: .8;
 }
 
 .logo img {
@@ -257,4 +311,77 @@ a:hover {
 
 .nav > ul > li > a:hover {
 	opacity: .8;
+}
+
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+.hero {
+	position: relative;
+	background-color: var(--c-purple);
+	color: var(--c-white);
+}
+
+.hero .hero__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	max-width: 50%;
+	height: 100%;
+}
+
+.hero .hero__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero .hero__inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin-left: auto;
+	padding: 2rem;
+	min-height: 61.2rem;
+	font-weight: 300;
+}
+
+.hero__content {
+	max-width: 49.4rem;
+}
+
+.hero h2 {
+	text-transform: uppercase;
+	color: var(--c-white);
+	margin-bottom: 4rem;
+}
+
+.hero .hero__actions {
+	margin-top: 4rem;
+	align-items: center;
+	display: flex;
+	gap: 1.5rem;
+}
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+.section {
+	padding: 7.4rem 0;
+}
+
+.section .section__bar {
+	text-align: center;
+	max-width: 47.5rem;
+	margin: 0 auto 4rem;
+}
+
+/* ------------------------------------------------------------ *\
+	List Logos
+\* ------------------------------------------------------------ */
+.list-logos {
+	list-style-type: none;
+	gap: 3rem;
 }

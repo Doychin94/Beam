@@ -9,8 +9,9 @@
   "author": "Doychin D.",
   "license": "ISC",
   "dependencies": {
+    "countup.js": "^2.8.0",
     "foundation-sites": "^6.8.1",
     "plyr": "^3.7.8",
-    "countup.js": "^2.8.0"
+    "swiper": "^11.1.4"
   }
 }

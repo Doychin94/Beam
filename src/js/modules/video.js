@@ -1,3 +1,6 @@
+/**
+ * External dependencies.
+ */
 import Plyr from '../../../node_modules/plyr/dist/plyr.min.mjs'
 
 export default function video() {

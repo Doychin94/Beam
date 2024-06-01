@@ -41,7 +41,7 @@ html {
 }
 
 body {
-	min-width: 320px;
+	min-width: 32.0rem;
 	margin: 0;
 	background: var(--c-white);
 	font-family: var(--f-family-base);
@@ -409,6 +409,12 @@ a:hover {
 	color: #6152D6;
 }
 
+.section__entry {
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	padding: 0 4rem;
+}
+
 /* ------------------------------------------------------------ *\
 	List Logos
 \* ------------------------------------------------------------ */
@@ -496,5 +502,133 @@ a:hover {
 	pointer-events: none;
 }
 
+/* ------------------------------------------------------------ *\
+	list stats
+\* ------------------------------------------------------------ */
+.list-stats {
+	list-style-type: none;
+	margin: 0 -1rem;
+}
 
+.list-stats li {
+	padding: 0 1rem;
+	font-weight: 700;
+	color: var(--c-purple-2);
+	text-align: center;
+}
 
+.list-stats .list__entry {
+	margin-bottom: 5rem;
+	font-size: 9.8rem;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--c-white);
+	background-size: cover;
+	background-clip: text;
+	text-shadow: .2rem .2rem 0 #97EBD8, -.2rem -.2rem 0 #97EBD8, .2rem -.2rem 0 #97EBD8,
+	-.2rem .2rem 0 #97EBD8, .2rem .2rem 0 #97EBD8;
+}
+
+/* ------------------------------------------------------------ *\
+	Section tabs
+\* ------------------------------------------------------------ */
+.section-tabs {
+	padding: 8.2rem 0;
+	background-color: #E8E9F9;
+	overflow: hidden
+}
+
+.section-tabs .section__head {
+	color: #2A2A2A;
+	max-width: 83rem;
+	margin: 0 auto 8.8rem;
+	text-align: center;
+}
+
+.section-tabs h2 {
+	max-width: 57.8rem;
+	margin: 0 auto 3rem;
+	color: var(--c-purple-dark);
+}
+
+/* ------------------------------------------------------------ *\
+	Tabs
+\* ------------------------------------------------------------ */
+.tabs {
+	background-color: transparent;
+	border: none;
+}
+
+.tabs .tabs__head {
+	padding: 14rem 0;
+}
+
+.tabs .tabs__nav ul {
+	list-style-type: none;
+}
+
+.tabs .tabs__nav ul li {
+	position: relative;
+	isolation: isolate;
+	padding: 2rem 2rem 2rem 0;
+}
+
+.tabs .tabs__nav ul li:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100vw;
+	border-radius: 4.4rem;
+	background-color: var(--c-purple);
+	opacity: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.tabs .tabs__nav ul li a {
+	text-decoration: none;
+	color: var(--c-purple);
+}
+
+.tabs .tabs__nav ul li a:hover {
+	color: #2A2A2A;
+}
+
+.tabs .tabs__body {
+	padding-left: 5.4rem;
+}
+
+.tabs .tab {
+	display: none;
+}
+
+.tabs .tab .tab__image {
+	margin-bottom: 1.7rem;
+}
+
+.tabs .tab h3 {
+	color: var(--c-purple-dark);
+	margin-bottom: 2rem;
+	font-weight: 600;
+}
+
+.tabs .tab .tab__btn {
+	margin-top: 3rem;
+}
+
+/* is current */
+.tabs .tabs__nav ul li.is-current:before {
+	opacity: 1;
+}
+
+.tabs .tabs__nav ul li.is-current a {
+	color: var(--c-white);
+	font-weight: 600;
+}
+
+.tabs .tab.is-current {
+	display: block;
+}

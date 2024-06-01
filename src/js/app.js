@@ -2,8 +2,9 @@
  * Modules.
  */
 // import stickyHeader from "./modules/sticky-header.js";
+import video from "./modules/video.js";
 
 // Init Modules
-// stickyHeader();
+video();
 
 $(document).foundation();

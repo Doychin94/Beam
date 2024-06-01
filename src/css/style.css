@@ -133,9 +133,30 @@ a:hover {
 }
 
 /* ------------------------------------------------------------ *\
+	Animations
+\* ------------------------------------------------------------ */
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	50% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-box-shadow: 0 0 0 2.5rem transparent;
+		box-shadow: 0 0 0 2.5rem transparent;
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-box-shadow: 0 0 0 0 transparent;
+		box-shadow: 0 0 0 0 transparent;
+	}
+}
+
+/* ------------------------------------------------------------ *\
 	Wrapper
 \* ------------------------------------------------------------ */
-
 .wrapper {
 	min-height: 100vh;
 	min-height: 100dvh;
@@ -178,6 +199,15 @@ a:hover {
 .btn-primary--white {
 	background-color: var(--c-white);
 	color: var(--c-purple-2);
+}
+
+/* is pulsing */
+.is-pulsing {
+	-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35);
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35);
+	animation: pulse 3s infinite;
+	-webkit-animation: pulse 3s infinite;
+	animation-delay: 2s;
 }
 
 /* ------------------------------------------------------------ *\
@@ -376,6 +406,7 @@ a:hover {
 	text-align: center;
 	max-width: 47.5rem;
 	margin: 0 auto 4rem;
+	color: #6152D6;
 }
 
 /* ------------------------------------------------------------ *\
@@ -385,3 +416,85 @@ a:hover {
 	list-style-type: none;
 	gap: 3rem;
 }
+
+/* ------------------------------------------------------------ *\
+	Section simple
+\* ------------------------------------------------------------ */
+.section-simple {
+	padding: 7rem 0;
+}
+
+.section-simple .section__inner {
+	max-width: 112rem;
+	margin: 0 auto;
+}
+
+.section-simple .section__aside {
+	padding-right: 5.4rem;
+}
+
+.section-simple h3 {
+	color: #6152D6;
+	margin-bottom: 5.2rem;
+}
+
+.section-simple p:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+/* ------------------------------------------------------------ *\
+	Video
+\* ------------------------------------------------------------ */
+.video {
+	position: relative;
+	aspect-ratio: 506.52 / 312.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video .video__poster {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.video .video__poster img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.video .plyr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.video .video__btn {
+	position: relative;
+	z-index: 10;
+	border-radius: 100%;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+/* is playing */
+.video.is-playing .video__poster {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.video.is-playing .video__btn {
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+

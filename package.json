@@ -9,6 +9,7 @@
   "author": "Doychin D.",
   "license": "ISC",
   "dependencies": {
-    "foundation-sites": "^6.8.1"
+    "foundation-sites": "^6.8.1",
+    "plyr": "^3.7.8"
   }
 }

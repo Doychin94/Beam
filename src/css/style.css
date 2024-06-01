@@ -706,3 +706,30 @@ a:hover {
 .slider .slider__clip {
 	overflow: visible;
 }
+
+.slider .swiper-pagination-bullet {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	border: none;
+	background-color: #DCD7FF;
+	opacity: .53;
+	margin: 0 .4rem;
+	transition: all var(--t-duration) ease-in-out;
+}
+
+.slider .swiper-pagination-bullet:hover {
+	opacity: 1;
+}
+
+.slider .swiper-pagination-bullet-active {
+	width: 5.5rem;
+	opacity: 1;
+	border-radius: 1rem;
+}
+
+/* slider patterns */
+.slider--patterns .swiper-pagination-bullets {
+	margin-top: 5rem;
+}

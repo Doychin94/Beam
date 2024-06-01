@@ -35,8 +35,15 @@ export default function slider() {
 	};
 
 	/**
-	 * Init slider hero.
+	 * Init slider.
 	 */
 	initSwiper($('.js-slider'))
+
+	/**
+	 * Init slider patterns.
+	 */
+	initSwiper($('.js-slider-patterns'), {
+		effect: 'fade',
+	})
 }
 	

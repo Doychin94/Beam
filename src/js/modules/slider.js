@@ -44,6 +44,17 @@ export default function slider() {
 	 */
 	initSwiper($('.js-slider-patterns'), {
 		effect: 'fade',
+		speed: 400,
+	})
+
+	/**
+	 * Init slider testimonials.
+	 */
+	initSwiper($('.js-slider-testimonials'), {
+		slidesPerView: 'auto',
+		spaceBetween: 27,
+		loop: false,
+		freeMode: true,
 	})
 }
 	

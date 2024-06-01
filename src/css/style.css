@@ -430,6 +430,10 @@ a:hover {
 	padding: 7rem 0;
 }
 
+.section-simple .section__grid-container {
+	padding: 0 5rem 0 12rem;
+}
+
 .section-simple .section__inner {
 	max-width: 112rem;
 	margin: 0 auto;
@@ -707,6 +711,11 @@ a:hover {
 	overflow: visible;
 }
 
+.slider__slide {
+	height: auto;
+}
+
+/* Swiper overwrites */
 .slider .swiper-pagination-bullet {
 	display: inline-block;
 	width: 2rem;
@@ -730,6 +739,61 @@ a:hover {
 }
 
 /* slider patterns */
+.slider--patterns:before {
+	display: none;
+}
+
+.slider--patterns .slider__slide {
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.slider--patterns .swiper-slide {
+	opacity: 0 !important;
+}
+
+.slider--patterns .swiper-slide-active {
+	opacity: 1 !important;
+}
+
 .slider--patterns .swiper-pagination-bullets {
-	margin-top: 5rem;
+	position: absolute;
+	bottom: 6rem;
+	right: -40rem;
+	z-index: 100;
+	left: unset;
+}
+
+/* slider testimonials */
+.slider--testimonials:before {
+	display: none;
+}
+
+.slider--testimonials .slider__slide {
+	width: 33.333333%;
+	max-width: 33.333333%;
+}
+
+/* ------------------------------------------------------------ *\
+	Testimonial
+\* ------------------------------------------------------------ */
+.testimonial {
+	padding: 4rem 3rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	background-color: var(--c-purple);
+	color: var(--c-white);
+}
+
+.testimonial blockquote {
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: var(--c-white);
+}
+
+.testimonial blockquote p {
+	color: var(--c-white);
 }

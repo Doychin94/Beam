@@ -48,6 +48,14 @@ export default function slider() {
 	})
 
 	/**
+	 * Init slider cycle.
+	 */
+	initSwiper($('.js-slider-cycle'), {
+		effect: 'fade',
+		speed: 400,
+	})
+
+	/**
 	 * Init slider testimonials.
 	 */
 	initSwiper($('.js-slider-testimonials'), {

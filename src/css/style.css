@@ -774,6 +774,28 @@ a:hover {
 	max-width: 33.333333%;
 }
 
+/* slider cycle */
+.slider--cycle:before {
+	display: none;
+}
+
+.slider--cycle .slider__slide {
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.slider--cycle .slider__pagination {
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.slider--cycle .swiper-slide {
+	opacity: 0 !important;
+}
+
+.slider--cycle .swiper-slide-active {
+	opacity: 1 !important;
+}
+
 /* ------------------------------------------------------------ *\
 	Testimonial
 \* ------------------------------------------------------------ */
@@ -1009,4 +1031,122 @@ a:hover {
 \* ------------------------------------------------------------ */
 .copyright {
 	display: inline-block;
+}
+
+/* ------------------------------------------------------------ *\
+	Section Approach
+\* ------------------------------------------------------------ */
+.section-approach {
+	padding: 9rem 0;
+}
+
+.section-approach .section__head {
+	max-width: 69.3rem;
+	margin: 0 auto 5.8rem;
+	text-align: center;
+}
+
+.section-approach h1 {
+	text-transform: uppercase;
+	color: var(--c-purple);
+	margin-bottom: 3rem;
+}
+
+.section-approach .section__entry {
+	margin-bottom: 6rem;
+}
+
+.section-approach .section__head h3 {
+	text-transform: uppercase;
+	color: var(--c-purple-dark);
+}
+
+/* ------------------------------------------------------------ *\
+	Cycle
+\* ------------------------------------------------------------ */
+.cycle .cycle__entry {
+	padding: 0 2rem;
+	max-width: 27.7rem;
+	margin: 0 auto;
+	position: relative;
+	background-color: var(--c-white);
+}
+
+.cycle .cycle__entry p {
+	font-weight: 300;
+}
+
+.cycle .cycle__arrow {
+	position: absolute;
+	right: calc(100% + 2rem);
+	top: 100%;
+	width: 19.5rem;
+	transform: rotate(245deg);
+}
+
+.cycle .cycle__row .cell:nth-child(1) .cycle__entry {
+	z-index: 5;
+}
+
+.cycle .cycle__row .cell:nth-child(1) .cycle__arrow {
+	right: unset;
+	left: 18rem;
+	transform: rotate(172deg);
+}
+
+.cycle .cycle__row .cell:nth-child(3) .cycle__entry {
+	z-index: 15;
+}
+
+.cycle .cycle__row .cell:nth-child(3) .cycle__arrow {
+	right: unset;
+	left: -7rem;
+	top: unset;
+	bottom: 100%;
+	transform: rotate(-5deg);
+}
+
+.cycle .cycle__row + .cycle__entry {
+	z-index: 10;
+}
+
+.cycle .cycle__row + .cycle__entry .cycle__arrow {
+	top: -13rem;
+	left: calc(100% + 3rem);
+	transform: rotate(82deg);;
+}
+
+.cycle .cycle__entry h3 {
+	text-transform: uppercase;
+	color: var(--c-purple);
+	margin-bottom: .3rem;
+}
+
+.cycle .cycle__row {
+	margin: 4.1rem 0 3.1rem;
+}
+
+.cycle .cycle__row .cycle__entry {
+	max-width: 29.4rem;
+	padding: 2rem 0;
+}
+
+.cycle .cycle__content {
+	padding: 0 2rem;
+}
+
+.cycle .cycle__circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	aspect-ratio: 1;
+	padding: 2rem;
+	background-color: var(--c-purple-dark);
+}
+
+.cycle .cycle__circle h3 {
+	text-transform: uppercase;
+	color: #F8F9FE;
+	max-width: 15.6rem;
 }

@@ -215,6 +215,11 @@ a:hover {
 	padding: 0.8rem 2.7rem 0.7rem;
 }
 
+/* btn primary xsmall */
+.btn-primary--xsmall {
+	padding: 0.8rem 2.3rem 0.7rem;
+}
+
 /* btn primary purple-light */
 .btn-primary--purple-light {
 	background-color: var(--c-purple);
@@ -545,6 +550,25 @@ a:hover {
 	margin-bottom: 1.5rem;
 }
 
+/* section simple adjust */
+.section-simple--adjust {
+	padding: 5.9rem 0 4.8rem;
+}
+
+.section-simple--adjust .section__grid-container {
+	max-width: 121rem;
+	padding: 0 2rem;
+}
+
+/* section simple modify */
+.section-simple--modify {
+	padding: 20.7rem 0 13.7rem;
+}
+
+.section-simple--modify .section__inner {
+	padding: 0 11.2rem 0 17.3rem;
+	max-width: unset;
+}
 /* ------------------------------------------------------------ *\
 	Video
 \* ------------------------------------------------------------ */
@@ -599,6 +623,11 @@ a:hover {
 	pointer-events: none;
 }
 
+/* video square */
+.video--square {
+	aspect-ratio: 1;
+}
+
 /* ------------------------------------------------------------ *\
 	list stats
 \* ------------------------------------------------------------ */
@@ -630,7 +659,7 @@ a:hover {
 	Section tabs
 \* ------------------------------------------------------------ */
 .section-tabs {
-	padding: 8.1rem 0;
+	padding: 8.1rem 0 8.5rem;
 	background-color: #E8E9F9;
 	overflow: hidden
 }
@@ -744,6 +773,7 @@ a:hover {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-auto-rows: repeat(auto auto);
 	gap: 0 18rem;
+	margin: 0;
 }
 
 .list-partners li {
@@ -752,6 +782,7 @@ a:hover {
 	grid-template-rows: subgrid;
 	gap: 2rem;
 	text-align: center;
+	justify-content: center;
 	color: var(--c-purple-2)
 }
 
@@ -759,29 +790,43 @@ a:hover {
 	Section purple
 \* ------------------------------------------------------------ */
 .section-purple {
-	padding: 10rem 0;
+	padding: 9rem 0 6.9rem;
 	background-color: var(--c-purple-dark);
 	overflow: hidden;
 	color: var(--c-white);
+}
+
+.section-purple .section__inner {
+	max-width: 93.3rem;
+	padding-left: 6.6rem;
+	gap: 2rem;
 }
 
 .section-purple .section__content {
 	position: relative;
 	z-index: 20;
 	background-color: var(--c-purple-dark);
+	padding-top: 2.3rem;
+	max-width: 38rem;
+}
+
+.section-purple .section__aside {
+	max-width: 32rem;
 }
 
 .section-purple h2 {
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	color: #F8F9FE;
+	font-weight: 600;
+	line-height: 1.28;
 }
 
 .section-purple .section__logo {
-	margin-bottom: 2rem;
+	margin-bottom: -.2rem;
 }
 
 .section-purple .section__entry {
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 }
 
 /* ------------------------------------------------------------ *\
@@ -809,8 +854,21 @@ a:hover {
 	overflow: visible;
 }
 
-.slider__slide {
+.slider .slider__slide {
 	height: auto;
+}
+
+.slider .slider__entry {
+	margin-top: 2.3rem;
+}
+
+.slider .slider__entry h3 {
+	color: var(--c-white);
+	font-weight: 400;
+}
+
+.slider .slider__pagination {
+	margin: 1.8rem 0 0 -.5rem;
 }
 
 /* Swiper overwrites */
@@ -897,12 +955,12 @@ a:hover {
 	Testimonial
 \* ------------------------------------------------------------ */
 .testimonial {
-	padding: 4rem 3rem;
+	padding: 5rem 4rem 4.1rem;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 5.2rem;
 	background-color: var(--c-purple);
 	color: var(--c-white);
 }
@@ -916,6 +974,13 @@ a:hover {
 
 .testimonial blockquote p {
 	color: var(--c-white);
+	line-height: 1.28;
+}
+
+.testimonial .testimonial__author {
+	display: inline-block;
+	margin-left: auto;
+	padding-right: 1.3rem;
 }
 
 /* ------------------------------------------------------------ *\
@@ -939,6 +1004,9 @@ a:hover {
 
 .section-form .section__inner {
 	position: relative;	
+	max-width: 105.5rem;
+	margin: 0 auto;
+
 }
 
 /* ------------------------------------------------------------ *\
@@ -948,10 +1016,10 @@ a:hover {
 	-webkit-box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
 	box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
+	background-color: var(--c-white);
 }
 
 .form .form__content {
-	background-color: var(--c-white);
 	padding: 7.8rem 9rem 6.7rem 6.5rem;
 	color: #6152D6;
 }
@@ -996,6 +1064,10 @@ a:hover {
 }
 
 .form .form__aside {
+	padding-left: 4rem;
+}
+
+.form .form__aside-inner {
 	background-color: var(--c-purple);
 	padding: 8.2rem 5.7rem 10rem;
 	color: var(--c-white);
@@ -1156,18 +1228,18 @@ a:hover {
 
 .section-approach .section__head {
 	max-width: 69.3rem;
-	margin: 0 auto 5.8rem;
+	margin: 0 auto 7.8rem;
 	text-align: center;
 }
 
 .section-approach h1 {
 	text-transform: uppercase;
 	color: var(--c-purple);
-	margin-bottom: 3rem;
+	margin-bottom: 3.3rem;
 }
 
 .section-approach .section__entry {
-	margin-bottom: 6rem;
+	margin-bottom: 7.9rem;
 }
 
 .section-approach .section__head h3 {
@@ -1175,12 +1247,18 @@ a:hover {
 	color: var(--c-purple-dark);
 }
 
+.section-approach .section__body {
+	max-width: 96rem;
+	margin: 0 auto;
+	padding-left: 0.7rem;
+}
+
 /* ------------------------------------------------------------ *\
 	Cycle
 \* ------------------------------------------------------------ */
 .cycle .cycle__entry {
 	padding: 0 2rem;
-	max-width: 27.7rem;
+	max-width: 30.5rem;
 	margin: 0 auto;
 	position: relative;
 	background-color: var(--c-white);
@@ -1192,10 +1270,10 @@ a:hover {
 
 .cycle .cycle__arrow {
 	position: absolute;
-	right: calc(100% + 2rem);
-	top: 100%;
-	width: 19.5rem;
-	transform: rotate(245deg);
+	right: calc(100% + -0.8rem);
+	top: calc(100% + -3.1rem);
+	width: 17.1rem;
+	transform: rotate(259deg);
 }
 
 .cycle .cycle__row .cell:nth-child(1) .cycle__entry {
@@ -1233,11 +1311,11 @@ a:hover {
 .cycle .cycle__entry h3 {
 	text-transform: uppercase;
 	color: var(--c-purple);
-	margin-bottom: .3rem;
+	margin-bottom: 0;
 }
 
 .cycle .cycle__row {
-	margin: 4.1rem 0 3.1rem;
+	margin: 3.7rem 0 3.1rem;
 }
 
 .cycle .cycle__row .cycle__entry {

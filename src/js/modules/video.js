@@ -3,12 +3,13 @@
  */
 import Plyr from '../../../node_modules/plyr/dist/plyr.min.mjs'
 
+export const players = new Map();
+
 export default function video() {
 	/**
 	 * Variables.
 	 */
-	const $videos = $('.js-video');
-	const players = new Map();
+	 const $videos = $('.js-video');
 
 	$videos.each((index,video) => {
 		const player = new Plyr($(video).find('.video__wrapper'), {
@@ -32,7 +33,7 @@ export default function video() {
 			}
 
 			player.pause();
-			$(video).removeClass('is-playing')
+			$(video).removeClass('is-playing');
 		});
 	}
 

@@ -19,7 +19,7 @@ export default function counter() {
 			const counter = new CountUp(stat, number, {
 				decimalPlaces: decimalPlace,
 				enableScrollSpy: true,
-				separator: "'",
+				separator: "",
 				scrollSpyOnce: true,
 				duration: 5.6,
 			});

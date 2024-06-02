@@ -3,6 +3,8 @@
  */
 import Swiper from '../../../node_modules/swiper/swiper-bundle.min.mjs';
 
+import { players } from './video.js';
+
 export default function slider() {
 	/**
 	 * Init slider
@@ -11,7 +13,7 @@ export default function slider() {
 	 * @param {Function} additionalOptionsCallback 
 	 * @return {Void}
 	 */
-	const initSwiper = ($sliders, additionalOptions) => {
+	const initSwiper = ($sliders, additionalOptions, isMethod) => {
 		$sliders.each((idx, slider) => {
 			const $slider = $(slider);
 			const sliderContainer = $slider.find('.slider__clip')[0];
@@ -31,13 +33,27 @@ export default function slider() {
 				  },
 				...additionalOptions,
 			});
+
+			if (isMethod) {
+				swiper.on('slideChangeTransitionEnd', function(event) {
+					const activeIndex = swiper.activeIndex -1;
+					const activeSlide = $(swiper.slides[activeIndex]);
+					const $video = activeSlide.find('.js-video');
+					const player = players.get($video[0]);
+
+					if (player) {
+						player.pause();
+						$video.removeClass('is-playing');
+					}
+				})
+			}
 		});
 	};
 
 	/**
 	 * Init slider.
 	 */
-	initSwiper($('.js-slider'))
+	initSwiper($('.js-slider'), {}, true)
 
 	/**
 	 * Init slider patterns.

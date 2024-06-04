@@ -854,6 +854,11 @@ a:hover {
 	max-width: unset;
 	padding-top: 0;
 	margin-top: -1.2rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 6rem 0;
 }
 
 .section-purple--modify .section__content h3 {
@@ -941,8 +946,10 @@ a:hover {
 }
 
 .slider--patterns .slider__pagination {
-	margin-top: 3.1rem;
-	position: static;
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .slider--patterns .swiper-slide-active {

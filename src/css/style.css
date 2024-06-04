@@ -122,6 +122,10 @@ blockquote:last-child {
 	margin-bottom: 0;
 }
 
+ul {
+	margin-left: 0;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -829,6 +833,35 @@ a:hover {
 	margin-bottom: 2.5rem;
 }
 
+/* section-purple modify */
+.section-purple--modify {
+	padding: 4.3rem 0 4.6rem;
+}
+
+.section-purple--modify .section__inner {
+	max-width: unset;
+	padding-left: 8.7rem;
+	padding-right: 8.1rem;
+	gap: 0;
+} 
+
+.section-purple--modify .section__aside {
+	max-width: unset;
+	padding-right: 5rem;
+}
+
+.section-purple--modify .section__content {
+	max-width: unset;
+	padding-top: 0;
+	margin-top: -1.2rem;
+}
+
+.section-purple--modify .section__content h3 {
+	font-weight: 600;
+	line-height: 1.28;
+	margin-bottom: 1.7rem;
+}
+
 /* ------------------------------------------------------------ *\
 	Slider
 \* ------------------------------------------------------------ */
@@ -907,16 +940,13 @@ a:hover {
 	opacity: 0 !important;
 }
 
-.slider--patterns .swiper-slide-active {
-	opacity: 1 !important;
+.slider--patterns .slider__pagination {
+	margin-top: 3.1rem;
+	position: static;
 }
 
-.slider--patterns .swiper-pagination-bullets {
-	position: absolute;
-	bottom: 6rem;
-	right: -40rem;
-	z-index: 100;
-	left: unset;
+.slider--patterns .swiper-slide-active {
+	opacity: 1 !important;
 }
 
 /* slider testimonials */
@@ -940,7 +970,7 @@ a:hover {
 
 .slider--cycle .slider__pagination {
 	text-align: center;
-	margin-top: 3rem;
+	margin-top: 5rem;
 }
 
 .slider--cycle .swiper-slide {
@@ -998,7 +1028,7 @@ a:hover {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 30rem;
+	height: 32rem;
 	background-color: var(--c-purple-dark);
 }
 
@@ -1020,14 +1050,14 @@ a:hover {
 }
 
 .form .form__content {
-	padding: 7.8rem 9rem 6.7rem 6.5rem;
+	padding: 8rem 2.5rem 6.7rem 6.9rem;
 	color: #6152D6;
 }
 
 .form .form__title {
 	font-weight: 600;
 	color: #6152D6;
-	margin-bottom: 4rem;
+	margin-bottom: 3.5rem;
 }
 
 .form .form__row ~ .form__row {
@@ -1035,17 +1065,17 @@ a:hover {
 }
 
 .form .form__cols {
-	margin: 0 -1rem
+	margin: 0 -1.4rem
 }
 
 .form .form__col {
-	padding: 0 1rem;
+	padding: 0 1.4rem;
 }
 
 .form .form__label {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 .3rem;
+	margin: 0 0 1rem;
 	font-size: 1.8rem;
 	line-height: 1.2;
 	font-weight: 400;
@@ -1053,7 +1083,7 @@ a:hover {
 }
 
 .form .form__actions {
-	margin-top: 4.5rem;
+	margin-top: 4.3rem;
 }
 
 .form .form__btn {
@@ -1061,25 +1091,41 @@ a:hover {
 	border-radius: 2.3rem;
 	width: 100%;
 	border: none;
+	font-weight: 400;
+	padding: 1.5rem 3.3rem 1.2rem;
 }
 
 .form .form__aside {
-	padding-left: 4rem;
+	padding-left: 6.3rem;
 }
 
 .form .form__aside-inner {
+	height: 100%;
 	background-color: var(--c-purple);
-	padding: 8.2rem 5.7rem 10rem;
+	padding: 8.2rem 4.6rem 9rem;
 	color: var(--c-white);
 }
 
 .form .form__image {
 	max-width: 26.2rem;
-	margin: 0 auto 6rem
+	aspect-ratio: 1;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 0 auto 6rem;
+	position: relative;
+}
+
+.form .form__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .form .form__entry {
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 /* is required */
@@ -1124,11 +1170,9 @@ a:hover {
 \* ------------------------------------------------------------ */
 .list-contacts {
 	list-style-type: none;
+	margin: 0;
 }
 
-.list-contacts li ~ li {
-	margin-top: .3rem;
-}
 
 .list-contacts li a {
 	text-decoration: none;
@@ -1149,13 +1193,25 @@ a:hover {
 	color: var(--c-white);
 }
 
+.footer .footer__grid-container {
+	max-width: 129.8rem;
+}
+
+.footer .footer__inner {
+	padding-right: 8.4rem;
+}
+
 .footer .footer__logo {
 	max-width: 22.9rem;
-	margin-bottom: 3.6rem;
+	margin-bottom: 3.5rem;
+}
+
+.footer .footer__aside {
+	padding-top: 0.7rem;
 }
 
 .footer .footer__col ~ .footer__col {
-	margin-left: 6rem;
+	margin-left: 6.3rem;
 }
 
 /* ------------------------------------------------------------ *\
@@ -1248,7 +1304,7 @@ a:hover {
 }
 
 .section-approach .section__body {
-	max-width: 96rem;
+	max-width: 109rem;
 	margin: 0 auto;
 	padding-left: 0.7rem;
 }
@@ -1278,34 +1334,39 @@ a:hover {
 
 .cycle .cycle__row .cell:nth-child(1) .cycle__entry {
 	z-index: 5;
+	margin: 1.8rem 0 0 7.8rem;
 }
 
 .cycle .cycle__row .cell:nth-child(1) .cycle__arrow {
 	right: unset;
-	left: 18rem;
-	transform: rotate(172deg);
+	left: 15.3rem;
+	top: calc(100% - 1rem);
+	transform: rotate(175deg);;
 }
 
 .cycle .cycle__row .cell:nth-child(3) .cycle__entry {
 	z-index: 15;
+	margin: 0 0 0 1.4rem;
 }
 
 .cycle .cycle__row .cell:nth-child(3) .cycle__arrow {
 	right: unset;
-	left: -7rem;
+	left: -5.1rem;
 	top: unset;
-	bottom: 100%;
-	transform: rotate(-5deg);
+	bottom: 91%;
+	transform: rotate(2deg);
 }
 
 .cycle .cycle__row + .cycle__entry {
 	z-index: 10;
+	padding-left: 3.4rem;
+ 
 }
 
 .cycle .cycle__row + .cycle__entry .cycle__arrow {
-	top: -13rem;
-	left: calc(100% + 3rem);
-	transform: rotate(82deg);;
+	top: -12.1rem;
+	left: calc(100% - 3.9rem);
+	transform: rotate(77deg);
 }
 
 .cycle .cycle__entry h3 {

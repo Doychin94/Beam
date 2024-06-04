@@ -58,10 +58,28 @@ export default function slider() {
 	/**
 	 * Init slider patterns.
 	 */
-	initSwiper($('.js-slider-patterns'), {
-		effect: 'fade',
-		speed: 400,
-	})
+
+	$('.js-slider-patterns').each((index,slider) => {
+		const $slider = $(slider);
+			const sliderContainer = $slider.find('.slider__clip')[0];
+	
+			 new Swiper(sliderContainer,{
+				effect: 'fade',
+				speed: 400,
+				spaceBetween: 0,
+				slidesPerView: 1,
+				allowTouchMove: true,
+				pagination: {
+					el: Array.from($slider[0].querySelectorAll('.slider__pagination')),
+					clickable: true,
+					renderBullet: function (index, className) {
+					  return '<span class="' + className + '">' + "</span>";
+					},
+				  },
+			});
+	});
+
+	
 
 	/**
 	 * Init slider cycle.

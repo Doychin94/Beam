@@ -22,12 +22,17 @@ a {
 	@media (hover: hover) {
 		&:where(:hover, :focus-visible) {
 			text-decoration: none;
+			color: currentColor;
 		}
 	}
 
 	&[href^='tel'] {
 		text-decoration: none;
 	}
+}
+
+a:hover {
+	color: currentColor;
 }
 
 .level-1,

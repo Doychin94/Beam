@@ -25,6 +25,10 @@
 
 .section-purple .section__aside {
 	max-width: 32rem;
+
+	@include breakpoint-down(small-desktop) {
+		max-width: 36rem;
+	}
 }
 
 .section-purple h2 {

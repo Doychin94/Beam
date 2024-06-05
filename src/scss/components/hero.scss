@@ -33,6 +33,10 @@
 	padding: 2rem 2rem 2rem 4.9rem;
 	min-height: 61.2rem;
 	font-weight: 300;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 2rem 0 2rem 2rem;
+	}
 }
 
 .hero__content {
@@ -51,4 +55,16 @@
 	align-items: center;
 	display: flex;
 	gap: 1.6rem;
+}
+
+.hero .hero__actions .btn-primary {
+	@include breakpoint-down(small-desktop) {
+		padding: 0.8rem 2.4rem 0.7rem;
+	}
+}
+
+.hero .hero__actions .btn-secondary {
+	@include breakpoint-down(small-desktop) {
+		padding: 0.7rem 2.4rem 0.6rem;
+	}
 }

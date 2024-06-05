@@ -47,9 +47,17 @@
 /* section simple modify */
 .section-simple--modify {
 	padding: 20.7rem 0 13.7rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 12rem 0 8rem;
+	}
 }
 
 .section-simple--modify .section__inner {
 	padding: 0 11.2rem 0 17.3rem;
 	max-width: unset;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 0 2rem 0;
+	}
 }

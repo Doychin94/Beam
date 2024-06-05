@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------ *\
+	cycle
+\* ------------------------------------------------------------ */
+
+.cycle .cycle__entry {
+	padding: 0 2rem;
+	max-width: 30.5rem;
+	margin: 0 auto;
+	position: relative;
+	background-color: var(--c-white);
+}
+
+.cycle .cycle__entry p {
+	font-weight: 300;
+}
+
+.cycle .cycle__arrow {
+	position: absolute;
+	right: calc(100% + -0.8rem);
+	top: calc(100% + -3.1rem);
+	width: 17.1rem;
+	transform: rotate(259deg);
+}
+
+.cycle .cycle__row .cell:nth-child(1) .cycle__entry {
+	z-index: 5;
+	margin: 1.8rem 0 0 7.8rem;
+}
+
+.cycle .cycle__row .cell:nth-child(1) .cycle__arrow {
+	right: unset;
+	left: 15.3rem;
+	top: calc(100% - 1rem);
+	transform: rotate(175deg);;
+}
+
+.cycle .cycle__row .cell:nth-child(3) .cycle__entry {
+	z-index: 15;
+	margin: 0 0 0 1.4rem;
+}
+
+.cycle .cycle__row .cell:nth-child(3) .cycle__arrow {
+	right: unset;
+	left: -5.1rem;
+	top: unset;
+	bottom: 91%;
+	transform: rotate(2deg);
+}
+
+.cycle .cycle__row + .cycle__entry {
+	z-index: 10;
+	padding-left: 3.4rem;
+
+}
+
+.cycle .cycle__row + .cycle__entry .cycle__arrow {
+	top: -12.1rem;
+	left: calc(100% - 3.9rem);
+	transform: rotate(77deg);
+}
+
+.cycle .cycle__entry h3 {
+	text-transform: uppercase;
+	color: var(--c-purple);
+	margin-bottom: 0;
+}
+
+.cycle .cycle__row {
+	margin: 3.7rem 0 3.1rem;
+}
+
+.cycle .cycle__row .cycle__entry {
+	max-width: 29.4rem;
+	padding: 2rem 0;
+}
+
+.cycle .cycle__content {
+	padding: 0 2rem;
+}
+
+.cycle .cycle__circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	aspect-ratio: 1;
+	padding: 2rem;
+	background-color: var(--c-purple-dark);
+}
+
+.cycle .cycle__circle h3 {
+	text-transform: uppercase;
+	color: #F8F9FE;
+	max-width: 15.6rem;
+}

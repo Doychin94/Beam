@@ -1,0 +1,86 @@
+/* ------------------------------------------------------------ *\
+	tabs
+\* ------------------------------------------------------------ */
+
+.tabs {
+	background-color: transparent;
+	border: none;
+}
+
+.tabs .tabs__head {
+	padding: 13.5rem 6.4rem 5rem 8.2rem;
+}
+
+.tabs .tabs__nav ul {
+	list-style-type: none;
+}
+
+.tabs .tabs__nav ul li {
+	position: relative;
+	isolation: isolate;
+	padding: 1.8rem 2rem 1.6rem 0;
+}
+
+.tabs .tabs__nav ul li:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100vw;
+	border-radius: 4.4rem;
+	background-color: var(--c-purple);
+	opacity: 0;
+	z-index: -1;
+	pointer-events: none;
+	transform: scale(0,1);
+	transition: transform .2s ease-in-out;
+}
+
+.tabs .tabs__nav ul li a {
+	text-decoration: none;
+	color: var(--c-purple);
+}
+
+.tabs .tabs__nav ul li a:hover {
+	color: #2A2A2A;
+}
+
+.tabs .tabs__body {
+	padding-left: .7rem;
+	max-width: 56.8rem;
+}
+
+.tabs .tab {
+	display: none;
+}
+
+.tabs .tab .tab__image {
+	margin-bottom: 2rem;
+}
+
+.tabs .tab h3 {
+	color: var(--c-purple-dark);
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.tabs .tab .tab__btn {
+	margin-top: .9rem;
+}
+
+/* is current */
+.tabs .tabs__nav ul li.is-current:before {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tabs .tabs__nav ul li.is-current a {
+	color: var(--c-white);
+	font-weight: 600;
+}
+
+.tabs .tab.is-current {
+	display: block;
+}

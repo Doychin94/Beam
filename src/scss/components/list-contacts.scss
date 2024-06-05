@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	list-contacts
+\* ------------------------------------------------------------ */
+
+.list-contacts {
+	list-style-type: none;
+	margin: 0;
+}
+
+
+.list-contacts li a {
+	text-decoration: none;
+	font-weight: 700;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.list-contacts li a:hover {
+	opacity: .8;
+}

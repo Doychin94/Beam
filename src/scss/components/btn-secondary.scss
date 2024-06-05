@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	btn-secondary
+\* ------------------------------------------------------------ */
+
+.btn-secondary {
+	appearance: none;
+	display: inline-block;
+	border-radius: 2.5rem;
+	padding: 0.7rem 3.4rem 0.6rem;
+	border: .1rem solid var(--c-white);
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: var(--c-white);
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.btn-secondary:hover {
+	opacity: .8;
+}

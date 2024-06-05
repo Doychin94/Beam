@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	list-stats
+\* ------------------------------------------------------------ */
+
+.list-stats {
+	list-style-type: none;
+	margin: 0 -1rem;
+}
+
+.list-stats li {
+	padding: 0 1rem;
+	font-weight: 700;
+	color: var(--c-purple-2);
+	text-align: center;
+}
+
+.list-stats .list__entry {
+	margin-bottom: 4rem;
+	font-size: 9.8rem;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--c-white);
+	background-size: cover;
+	background-clip: text;
+	text-shadow: .3rem .3rem 0 #97EBD8, -.3rem -.3rem 0 #97EBD8, .3rem -.3rem 0 #97EBD8,
+	-.3rem .3rem 0 #97EBD8, .3rem .3rem 0 #97EBD8;
+}

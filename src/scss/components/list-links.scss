@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	list-links
+\* ------------------------------------------------------------ */
+
+.list-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.list-links a {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	transition: transform var(--t-duration) ease-in-out;
+}
+
+.list-links a:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: .2rem;
+	left: 0;
+	width: 100%;
+	height: .1rem;
+	background-color: currentColor;
+	transform: scale(0, 1);
+	transform-origin: right;
+	transition: transform var(--t-duration) ease-in;
+}
+
+.list-links a:hover:before {
+	transform: scale(1);
+	transform-origin: left;
+}

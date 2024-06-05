@@ -1,15 +1,13 @@
 /**
- * Modules.
+ * SCSS.
  */
-import video from "./modules/video.js";
-import initCounters from "./modules/counter.js";
-import tabs from "./modules/tabs.js";
-import slider from "./modules/slider.js";
+import '/scss/style.scss';
 
-// Init Modules
-tabs();
-video();
-slider();
-initCounters();
+/*
+ * Modules
+ */
 
-$(document).foundation();
+import './modules/tabs'
+import './modules/videos'
+import './modules/slider'
+import './modules/counter'

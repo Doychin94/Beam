@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	background-color: var(--c-purple-dark);
+	padding: 9rem 0;
+	color: var(--c-white);
+}
+
+.footer .footer__grid-container {
+	max-width: 129.8rem;
+}
+
+.footer .footer__inner {
+	padding-right: 8.4rem;
+}
+
+.footer .footer__logo {
+	max-width: 22.9rem;
+	margin-bottom: 3.5rem;
+}
+
+.footer .footer__aside {
+	padding-top: 0.7rem;
+}
+
+.footer .footer__col ~ .footer__col {
+	margin-left: 6.3rem;
+}

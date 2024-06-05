@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	section-form
+\* ------------------------------------------------------------ */
+
+.section-form {
+	padding: 8rem 0 4rem;
+	position: relative;
+}
+
+.section-form:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 32rem;
+	background-color: var(--c-purple-dark);
+}
+
+.section-form .section__inner {
+	position: relative;
+	max-width: 105.5rem;
+	margin: 0 auto;
+
+}

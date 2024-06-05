@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	list-downloads
+\* ------------------------------------------------------------ */
+
+.list-downloads {
+	list-style-type: none;
+	display: flex;
+	gap: 3.6rem;
+}
+
+.list-downloads a {
+	text-decoration: none;
+	display: inline-block;
+	transition: opacity var(--t-duration), transform var(--t-duration) ease-in-out;
+}
+
+.list-downloads a:hover {
+	transform: scale(1.02);
+}

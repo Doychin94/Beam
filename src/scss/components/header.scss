@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	header
+\* ------------------------------------------------------------ */
+
+.header {
+	padding: 3.8rem 0 3.4rem;
+	overflow: hidden;
+}
+
+.header .header__inner {
+	margin: 0 -1.2rem 0 -.2rem;
+}
+
+.header .header__logo {
+	top: -0.5rem;
+}
+
+.header .header__menu {
+	margin-left: 2rem;
+}
+
+.header .header__bar {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 2.5rem;
+}

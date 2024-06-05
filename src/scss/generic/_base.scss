@@ -1,0 +1,146 @@
+// ==========================================================================
+// Base
+// ==========================================================================
+
+html {
+	font-size: var(--fz-html);
+}
+
+body {
+	min-width: 320px;
+	font-family: var(--ff-base);
+	font-weight: var(--fw-base);
+	font-size: var(--fz-base);
+	line-height: var(--lh-base);
+	color: var(--c-base);
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+
+	@media (hover: hover) {
+		&:where(:hover, :focus-visible) {
+			text-decoration: none;
+		}
+	}
+
+	&[href^='tel'] {
+		text-decoration: none;
+	}
+}
+
+.level-1,
+h1,
+.level-2,
+h2,
+.level-3,
+h3,
+.level-4,
+h4,
+.level-5,
+h5,
+.level-6,
+h6 {
+	margin-bottom: calc(var(--lh-base) * 0.5em);
+}
+
+.level-1,
+h1 {
+	font-size: 4.8rem;
+	line-height: 1.041;
+	font-weight: 800;
+	font-family: var(--ff-base);
+}
+
+.level-2,
+h2 {
+	font-size: 3.8rem;
+	line-height: 1.315;
+	font-weight: 800;
+	font-family: var(--ff-base);
+}
+
+.level-3,
+h3 {
+	font-size: 2.8rem;
+	line-height: 1.071;
+	font-weight: 800;
+	font-family: var(--ff-base);
+}
+
+.level-4,
+h4 {
+	font-size: 2.4rem;
+	line-height: 1.2;
+	font-family: var(--ff-base);
+}
+
+.level-5,
+h5 {
+	font-size: 2rem;
+	line-height: 1.2;
+	font-family: var(--ff-base);
+}
+
+.level-6,
+h6 {
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 400;
+	font-family: var(--ff-base);
+}
+
+p,
+ul,
+ol,
+dl,
+hr,
+table,
+blockquote {
+	margin-bottom: calc(var(--lh-base) * 0.5em);
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child {
+	margin-bottom: 0;
+}
+
+
+/* ------------------------------------------------------------ *\
+	Animations
+\* ------------------------------------------------------------ */
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	50% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-box-shadow: 0 0 0 2.5rem transparent;
+		box-shadow: 0 0 0 2.5rem transparent;
+	}
+	100% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-box-shadow: 0 0 0 0 transparent;
+		box-shadow: 0 0 0 0 transparent;
+	}
+}

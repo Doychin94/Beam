@@ -1,0 +1,94 @@
+/* ------------------------------------------------------------ *\
+	form
+\* ------------------------------------------------------------ */
+
+.form {
+	-webkit-box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
+	box-shadow: 0 1.4rem 4rem 2rem rgba(0,0,0,0.15);
+	background-color: var(--c-white);
+}
+
+.form .form__content {
+	padding: 8rem 2.5rem 6.7rem 6.9rem;
+	color: #6152D6;
+}
+
+.form .form__title {
+	font-weight: 600;
+	color: #6152D6;
+	margin-bottom: 3.5rem;
+}
+
+.form .form__row ~ .form__row {
+	margin-top: 2.1rem;
+}
+
+.form .form__cols {
+	margin: 0 -1.4rem
+}
+
+.form .form__col {
+	padding: 0 1.4rem;
+}
+
+.form .form__label {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 1rem;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #6152D6;
+}
+
+.form .form__actions {
+	margin-top: 4.3rem;
+}
+
+.form .form__btn {
+	display: block;
+	border-radius: 2.3rem;
+	width: 100%;
+	border: none;
+	font-weight: 400;
+	padding: 1.5rem 3.3rem 1.2rem;
+}
+
+.form .form__aside {
+	padding-left: 6.3rem;
+}
+
+.form .form__aside-inner {
+	height: 100%;
+	background-color: var(--c-purple);
+	padding: 8.2rem 4.6rem 9rem;
+	color: var(--c-white);
+}
+
+.form .form__image {
+	max-width: 26.2rem;
+	aspect-ratio: 1;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 0 auto 6rem;
+	position: relative;
+}
+
+.form .form__image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.form .form__entry {
+	margin-bottom: 1.5rem;
+}
+
+/* is required */
+.form .is-required {
+	color: red;
+}

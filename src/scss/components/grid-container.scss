@@ -1,0 +1,14 @@
+/* ------------------------------------------------------------ *\
+	Grid container
+\* ------------------------------------------------------------ */
+.grid-container {
+	width: 100%;
+	max-width: 117rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+/* grid-container large */
+.grid-container--large {
+	max-width: 128.7rem;
+}

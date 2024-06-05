@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------ *\
+	btn-primary
+\* ------------------------------------------------------------ */
+
+.btn-primary {
+	appearance: none;
+	display: inline-block;
+	background-color: var(--c-purple-2);
+	border-radius: 2.5rem;
+	padding: 0.8rem 3.3rem 0.7rem;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--c-white);
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.btn-primary:hover {
+	opacity: .8;
+	color: var(--c-white);
+}
+
+/* btn primary large */
+.btn-primary--large {
+	padding: 0.6rem 4.2rem 0.7rem;
+}
+
+/* btn primary small */
+.btn-primary--small {
+	padding: 0.8rem 2.7rem 0.7rem;
+}
+
+/* btn primary xsmall */
+.btn-primary--xsmall {
+	padding: 0.8rem 2.3rem 0.7rem;
+}
+
+/* btn primary purple-light */
+.btn-primary--purple-light {
+	background-color: var(--c-purple);
+}
+
+/* btn primary white */
+.btn-primary--white {
+	background-color: var(--c-white);
+	color: var(--c-purple-2);
+}
+
+.btn-primary--white:hover {
+	color: var(--c-purple-2);
+}
+
+/* is pulsing */
+.is-pulsing {
+	-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35);
+	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35);
+	animation: pulse 3s infinite;
+	-webkit-animation: pulse 3s infinite;
+	animation-delay: 2s;
+}

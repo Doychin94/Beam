@@ -1,81 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-
-	<title>Beam</title>
-
-	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico"/>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="../node_modules/foundation-sites/dist/css/foundation.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="../node_modules/plyr/dist/plyr.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-</head>
-
+{{> head }}
 <body>
 	<div class="wrapper">
-		<div class="header js-header">
-			<div class="grid-container">
-				<div class="grid-x align-bottom align-justify header__inner">
-					<a href="#" class="logo header__logo">
-						<img src="assets/images/logo.svg" alt="" width="229" height="53">
-					</a><!-- /.logo -->
-
-					<div class="header__menu">
-						<div class="header__menu-inner">
-							<div class="header__bar">
-								<nav class="nav-secondary">
-									<ul>
-										<li class="is-current">
-											<a href="#">Enterprise</a>
-										</li>
-
-										<li>
-											<a href="#">Personal</a>
-										</li>
-									</ul>
-								</nav><!-- /.nav-secondary -->
-							</div><!-- /.header__bar -->
-
-							<nav class="nav">
-								<ul>
-									<li class="is-current">
-										<a href="#">Home</a>
-									</li>
-
-									<li>
-										<a href="#">Our Impact</a>
-									</li>
-
-									<li>
-										<a href="#">How Beam Works</a>
-									</li>
-
-									<li>
-										<a href="#">Research</a>
-									</li>
-
-									<li>
-										<a href="#">About Us</a>
-									</li>
-								</ul>
-							</nav><!-- /.nav -->
-						</div><!-- /.header__menu-inner -->
-					</div><!-- /.header__menu -->
-				</div><!-- /.header__inner -->
-			</div><!-- /.grid-container -->
-		</div><!-- /.header js-header -->
-
+		{{> header }}
 		<section class="hero">
 			<div class="grid-container">
 				<figure class="hero__image">
@@ -138,11 +66,11 @@
 							<div class="video__poster">
 								<img src="assets/images/temp/video-poster.jpg" alt="">
 							</div><!-- /.video__poster -->
-						
+
 							<div class="video__wrapper">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</div><!-- /.video__wrapper -->
-						
+
 							<a href="#" class="video__btn is-pulsing">
 								<img src="assets/images/svg/play.svg" alt="" width="64" height="64">
 							</a>
@@ -172,23 +100,23 @@
 							<div class="list__entry">
 								<span class="js-counter" data-number="4">4</span><!-- /.js-counter -->
 							</div><!-- /.list__entry -->
-	
+
 							<p>Working Days Lost on Average </p>
 						</li><!-- /.cell medium-4 -->
-	
+
 						<li class="cell medium-4">
 							<div class="list__entry">
 								£<span class="js-counter" data-number="1400">1400</span><!-- /.js-counter -->
 							</div><!-- /.list__entry -->
-	
+
 							<p>Cost per Employee on Average</p>
 						</li><!-- /.cell medium-4 -->
-	
+
 						<li class="cell medium-4">
 							<div class="list__entry">
 								<span class="js-counter" data-number="57"> 57</span>%<!-- /.js-counter -->
 							</div><!-- /.list__entry -->
-	
+
 							<p>Workers dissengaged due to Stress</p>
 						</li><!-- /.cell medium-4 -->
 					</ul><!-- /.list-stats -->
@@ -235,7 +163,7 @@
 								</ul>
 							</div><!-- /.tabs__nav -->
 						</div><!-- /.tabs__head -->
-					
+
 						<div class="tabs__body cell medium-7">
 							<div class="tab is-current" id="tab1">
 								<figure class="tab__image">
@@ -352,11 +280,11 @@
 											<div class="video__poster">
 												<img src="assets/images/temp/video-poster.jpg" alt="">
 											</div><!-- /.video__poster -->
-										
+
 											<div class="video__wrapper">
 												<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 											</div><!-- /.video__wrapper -->
-										
+
 											<a href="#" class="video__btn is-pulsing">
 												<img src="assets/images/svg/play.svg" alt="" width="81" height="81">
 											</a>
@@ -372,11 +300,11 @@
 											<div class="video__poster">
 												<img src="assets/images/temp/video-poster.jpg" alt="">
 											</div><!-- /.video__poster -->
-										
+
 											<div class="video__wrapper">
 												<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 											</div><!-- /.video__wrapper -->
-										
+
 											<a href="#" class="video__btn is-pulsing">
 												<img src="assets/images/svg/play.svg" alt="" width="81" height="81">
 											</a>
@@ -392,11 +320,11 @@
 											<div class="video__poster">
 												<img src="assets/images/temp/video-poster.jpg" alt="">
 											</div><!-- /.video__poster -->
-										
+
 											<div class="video__wrapper">
 												<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 											</div><!-- /.video__wrapper -->
-										
+
 											<a href="#" class="video__btn is-pulsing">
 												<img src="assets/images/svg/play.svg" alt="" width="81" height="81">
 											</a>
@@ -412,11 +340,11 @@
 											<div class="video__poster">
 												<img src="assets/images/temp/video-poster.jpg" alt="">
 											</div><!-- /.video__poster -->
-										
+
 											<div class="video__wrapper">
 												<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 											</div><!-- /.video__wrapper -->
-										
+
 											<a href="#" class="video__btn is-pulsing">
 												<img src="assets/images/svg/play.svg" alt="" width="81" height="81">
 											</a>
@@ -432,11 +360,11 @@
 											<div class="video__poster">
 												<img src="assets/images/temp/video-poster.jpg" alt="">
 											</div><!-- /.video__poster -->
-										
+
 											<div class="video__wrapper">
 												<iframe width="560" height="315" src="https://www.youtube.com/embed/f7NwyBnIRTE?si=d6xfa0PogPhdfvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 											</div><!-- /.video__wrapper -->
-										
+
 											<a href="#" class="video__btn is-pulsing">
 												<img src="assets/images/svg/play.svg" alt="" width="81" height="81">
 											</a>
@@ -489,7 +417,7 @@
 											<div class="cell medium-4">
 												<div class="cycle__entry">
 													<h3>Impact Assessment</h3>
-	
+
 													<p>Track changes and evaluate ROI.</p>
 
 													<i class="cycle__arrow">
@@ -545,7 +473,7 @@
 											<div class="cell medium-4">
 												<div class="cycle__entry">
 													<h3>Impact Assessment</h3>
-	
+
 													<p>Track changes and evaluate ROI.</p>
 
 													<i class="cycle__arrow">
@@ -607,7 +535,7 @@
 									<div class="section__content cell medium-6">
 										<div class="section__content-inner">
 											<h3>Beam sees the patterns your employees don’t</h3>
-	
+
 											<p>Sometimes it’s hard to see the “wood for the trees”. The Beam app evaluates people’s mental, physical and financial health, shining a light on the issues that are causing them most stress, taking the guesswork out of understanding their wellbeing.</p>
 										</div><!-- /.section__content-inner -->
 
@@ -626,7 +554,7 @@
 									<div class="section__content cell medium-6">
 										<div class="section__content-inner">
 											<h3>Beam sees the patterns your employees don’t</h3>
-	
+
 											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores at voluptatibus consequatur fugiat hic, aliquid quaerat quisquam nisi et.</p>
 										</div><!-- /.section__content-inner -->
 
@@ -645,7 +573,7 @@
 									<div class="section__content cell medium-6">
 										<div class="section__content-inner">
 											<h3>Lorem ipsum dolor sit amet.</h3>
-	
+
 											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores at voluptatibus consequatur fugiat hic, aliquid quaerat quisquam nisi et.</p>
 										</div><!-- /.section__content-inner -->
 
@@ -664,7 +592,7 @@
 									<div class="section__content cell medium-6">
 										<div class="section__content-inner">
 											<h3>Beam sees the patterns your employees don’t</h3>
-	
+
 											<p>Sometimes it’s hard to see the “wood for the trees”. The Beam app evaluates people’s mental, physical and financial health, shining a light on the issues that are causing them most stress, taking the guesswork out of understanding their wellbeing.</p>
 										</div><!-- /.section__content-inner -->
 
@@ -683,7 +611,7 @@
 									<div class="section__content cell medium-6">
 										<div class="section__content-inner">
 											<h3>Beam sees the patterns your employees don’t</h3>
-	
+
 											<p>Sometimes it’s hard to see the “wood for the trees”. The Beam app evaluates people’s mental, physical and financial health, shining a light on the issues that are causing them most stress, taking the guesswork out of understanding their wellbeing.</p>
 										</div><!-- /.section__content-inner -->
 
@@ -709,67 +637,67 @@
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
-	
+
 								<div class="slider__slide swiper-slide">
 									<div class="testimonial">
 										<blockquote>
 											<p>“I’ve tried lots of things to feel less stressed: yoga, diets and some positive thinking courses but they didn’t help and were quite expensive too. Beam’s the first app that’s told me what I’m doing and how I’m feeling at the same time.”</p>
 										</blockquote>
-	
+
 										<span class="testimonial__author">- Luke: Hilton Hotels</span><!-- /.testimonial__author -->
 									</div><!-- /.testimonial -->
 								</div><!-- /.slider__slide -->
@@ -792,13 +720,13 @@
 									<div class="form__cols grid-x">
 										<div class="form__col col medium-6">
 											<label for="name" class="form__label is-required">Your Name <span class="form__asterisk">*</span><!-- /.form__asterisk --></label><!-- /.form__label -->
-											
+
 											<input type="text" id="name" class="field">
 										</div><!-- /.form__col col medium-6 -->
 
 										<div class="form__col col medium-6">
 											<label for="phone" class="form__label">Phone Number </label><!-- /.form__label -->
-											
+
 											<input type="text" id="phone" class="field">
 										</div><!-- /.form__col col medium-6 -->
 									</div><!-- /.grid-x -->
@@ -827,22 +755,22 @@
 								</div><!-- /.form__actions -->
 							</form>
 						</div><!-- /.form__content cell medium-8 -->
-						
+
 						<div class="form__aside cell medium-5">
 							<div class="form__aside-inner">
 								<figure class="form__image">
 									<img src="assets/images/temp/form-img.png" alt="" width="262" height="262">
 								</figure><!-- /.form__image -->
-	
+
 								<div class="form__entry">
 									<p>Beam prioritizes our customer relationships. Speak with our CEO, Peter, today about how we can best help you and your team</p>
 								</div><!-- /.form__entry -->
-	
+
 								<ul class="list-contacts">
 									<li>
 										<a href="tel:+445555555">+44 5555 555</a>
 									</li>
-	
+
 									<li>
 										<a href="mailto:Peter@beamemail.com">Peter@beamemail.com</a>
 									</li>
@@ -853,75 +781,9 @@
 				</div><!-- /.section__inner grid-x -->
 			</div><!-- /.grid-container -->
 		</section><!-- /.section-form -->
-
-		<footer class="footer">
-			<div class="grid-container footer__grid-container">
-				<div class="footer__inner grid-x align-justify">
-					<div class="footer__content">
-						<a href="#" class="logo footer__logo">
-							<img src="assets/images/footer-logo.svg" alt="" width="229" height="53">
-						</a><!-- /.footer__logo -->
-
-						<ul class="list-downloads">
-							<li>
-								<a href="#">
-									<img src="assets/images/temp/app-store.png" alt="" width="143" height="47">
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<img src="assets/images/temp/google-play.png" alt="" width="161" height="47">
-								</a>
-							</li>
-						</ul><!-- /.list-downloads -->
-					</div><!-- /.footer__content -->
-
-					<div class="footer__aside grid-x">
-						<div class="footer__col">
-							<ul class="list-links footer__list-links">
-								<li>
-									<a href="https://www.beamandme.com/support/">Support</a>
-								</li>
-
-								<li>
-									<a href="https://www.beamandme.com/terms-and-conditions/">Terms and Conditions</a>
-								</li>
-
-								<li>
-									<a href="https://www.beamandme.com/privacy-policy/">Privacy Policy</a>
-								</li>
-							</ul><!-- /.list-links -->
-
-							<span class="copyright">&copy; 2022 Beam</span><!-- /.copyright -->
-						</div><!-- /.footer__col -->
-
-						<div class="footer__col">
-							<ul class="list-links footer__list-links">
-								<li>
-									<a href="https://www.beamandme.com/support/">Support</a>
-								</li>
-
-								<li>
-									<a href="https://www.beamandme.com/terms-and-conditions/">Terms and Conditions</a>
-								</li>
-
-								<li>
-									<a href="https://www.beamandme.com/privacy-policy/">Privacy Policy</a>
-								</li>
-							</ul><!-- /.list-links -->
-
-							<span class="copyright">&copy; 2022 Beam</span><!-- /.copyright -->
-						</div><!-- /.footer__col -->
-					</div><!-- /.footer__aside -->
-				</div><!-- /.footer__inner grid-x -->
-			</div><!-- /.grid-container -->
-		</footer><!-- /.footer -->
-
+		{{> footer }}
 	</div><!-- /.wrapper -->
 
-	<script type="module" src="./assets/vendor/jquery-3.7.1.min.js"></script>
-	<script type="module" src="../node_modules/foundation-sites/dist/js/foundation.min.js"></script>
-	<script type="module" src="./js/app.js"></script>
+	{{> scripts }}
 </body>
 </html>

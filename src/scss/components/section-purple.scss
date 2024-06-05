@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------ *\
+	section-purple
+\* ------------------------------------------------------------ */
+
+.section-purple {
+	padding: 9rem 0 6.9rem;
+	background-color: var(--c-purple-dark);
+	overflow: hidden;
+	color: var(--c-white);
+}
+
+.section-purple .section__inner {
+	max-width: 93.3rem;
+	padding-left: 6.6rem;
+	gap: 2rem;
+}
+
+.section-purple .section__content {
+	position: relative;
+	z-index: 20;
+	background-color: var(--c-purple-dark);
+	padding-top: 2.3rem;
+	max-width: 38rem;
+}
+
+.section-purple .section__aside {
+	max-width: 32rem;
+}
+
+.section-purple h2 {
+	margin-bottom: 3rem;
+	color: #F8F9FE;
+	font-weight: 600;
+	line-height: 1.28;
+}
+
+.section-purple .section__logo {
+	margin-bottom: -.2rem;
+}
+
+.section-purple .section__entry {
+	margin-bottom: 2.5rem;
+}
+
+/* section-purple modify */
+.section-purple--modify {
+	padding: 4.3rem 0 4.6rem;
+}
+
+.section-purple--modify .section__inner {
+	max-width: unset;
+	padding-left: 8.7rem;
+	padding-right: 8.1rem;
+	gap: 0;
+}
+
+.section-purple--modify .section__aside {
+	max-width: unset;
+	padding-right: 5rem;
+}
+
+.section-purple--modify .section__content {
+	max-width: unset;
+	padding-top: 0;
+	margin-top: -1.2rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 6rem 0;
+}
+
+.section-purple--modify .section__content h3 {
+	font-weight: 600;
+	line-height: 1.28;
+	margin-bottom: 1.7rem;
+}

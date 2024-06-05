@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	max-width:22.9rem;
+	transition: opacity var(--t-duration) ease-in-out;
+}
+
+.logo:hover {
+	opacity: .8;
+}
+
+.logo img {
+	width: 100%;
+}

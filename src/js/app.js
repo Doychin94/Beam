@@ -7,6 +7,7 @@ import '/scss/style.scss';
  * Modules
  */
 
+import './modules/nav'
 import './modules/tabs'
 import './modules/videos'
 import './modules/slider'

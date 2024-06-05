@@ -13,6 +13,12 @@ body {
 	font-size: var(--fz-base);
 	line-height: var(--lh-base);
 	color: var(--c-base);
+
+	&.menu-visible {
+		@include breakpoint-down(tablet) {
+			overflow: hidden;
+		}
+	}
 }
 
 a {

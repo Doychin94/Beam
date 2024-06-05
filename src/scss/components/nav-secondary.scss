@@ -4,59 +4,75 @@
 
 .nav-secondary {
 	color: var(--c-purple);
+
+	@include breakpoint-down(tablet) {
+		font-size: 2.8rem;
+	}
+
+	> ul {
+		display: flex;
+		list-style-type: none;
+		gap: 1.7rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	> ul > li {
+		position: relative;
+		padding: 0 1rem;
+	}
+
+	> ul > li > a {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;;
+	}
+
+	> ul > li > a:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: .1rem;
+		background-color: currentColor;
+		transform: scale(0, 1);
+		transform-origin: left;
+		transition: transform var(--t-duration) ease-in;
+	}
+
+	> ul > li > a:hover:before {
+		transform: scale(1);
+	}
+
+
+	/* is current*/
+	> ul > li.is-current {
+		font-weight: 700;
+		color: var(--c-white);
+		isolation: isolate;
+	}
+
+	> ul > li.is-current:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		bottom: -0.9rem;
+		top: -10rem;
+		left: -0.3rem;
+		right: 0;
+		z-index: -1;
+		background-color: var(--c-purple);
+
+		@include breakpoint-down(tablet) {
+			bottom: 0;
+			top: 0;
+			left: 0;
+		}
+	}
 }
 
-.nav-secondary > ul {
-	display: flex;
-	list-style-type: none;
-	gap: 1.7rem;
-}
-
-.nav-secondary > ul > li {
-	position: relative;
-	padding: 0 1rem;
-}
-
-.nav-secondary > ul > li > a {
-	display: inline-block;
-	position: relative;
-	text-decoration: none;;
-}
-
-.nav-secondary > ul > li > a:before {
-	content: '';
-	display: inline-block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: .1rem;
-	background-color: currentColor;
-	transform: scale(0, 1);
-	transform-origin: left;
-	transition: transform var(--t-duration) ease-in;
-}
-
-.nav-secondary > ul > li > a:hover:before {
-	transform: scale(1);
-}
-
-
-/* is current*/
-.nav-secondary > ul > li.is-current {
-	font-weight: 700;
-	color: var(--c-white);
-	isolation: isolate;
-}
-
-.nav-secondary > ul > li.is-current:before {
-	content: '';
-	display: inline-block;
-	position: absolute;
-	bottom: -0.9rem;
-	top: -10rem;
-	left: -0.3rem;
-	right: 0;
-	z-index: -1;
-	background-color: var(--c-purple);
-}

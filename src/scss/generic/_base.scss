@@ -21,6 +21,16 @@ body {
 	}
 }
 
+p,
+a,
+span,
+strong,
+ul,
+ol,
+b {
+	line-height: var(--lh-base);
+}
+
 a {
 	color: inherit;
 	text-decoration: underline;

@@ -17,7 +17,7 @@ const initCounters = ($counter) => {
 			enableScrollSpy: true,
 			separator: "",
 			scrollSpyOnce: true,
-			duration: 5.6,
+			duration: 4,
 		});
 		counter.start();
 	});

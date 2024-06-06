@@ -6,4 +6,8 @@
 	list-style-type: none;
 	gap: 3rem;
 	margin: 0;
+
+	@include breakpoint-down(tablet) {
+		justify-content: space-around;
+	}
 }

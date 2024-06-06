@@ -4,8 +4,12 @@
 
 .footer {
 	background-color: var(--c-purple-dark);
-	padding: 9rem 0;
+	padding: 12.9rem 0 8rem;
 	color: var(--c-white);
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
 }
 
 .footer .footer__grid-container {
@@ -13,7 +17,12 @@
 }
 
 .footer .footer__inner {
-	padding-right: 8.4rem;
+	padding-right: 7.8rem;
+
+	@include breakpoint-down(tablet) {
+		padding-right: 0;
+		gap: 3rem;
+	}
 }
 
 .footer .footer__logo {

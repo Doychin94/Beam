@@ -12,6 +12,10 @@
 .form .form__content {
 	padding: 8rem 2.5rem 6.7rem 6.9rem;
 	color: #6152D6;
+
+	@include breakpoint-down(tablet) {
+		padding: 6rem 2rem;
+	}
 }
 
 .form .form__title {
@@ -57,6 +61,10 @@
 
 .form .form__aside {
 	padding-left: 6.3rem;
+
+	@include breakpoint-down(tablet) {
+		padding-left: 0;
+	}
 }
 
 .form .form__aside-inner {

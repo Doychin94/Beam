@@ -3,8 +3,7 @@
 // ==========================================================================
 
 //@import 'vendor_name directory from node_modules/vendor.css';
-@import 'swiper/css/bundle';
-@import 'plyr/dist/plyr.css';
+
 
 // ==========================================================================
 // Generic
@@ -31,6 +30,7 @@
 
 //@import 'overwrites/';
 
-
+@import 'swiper/css/bundle';
+@import 'plyr/dist/plyr.css';
 
 

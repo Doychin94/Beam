@@ -10,8 +10,21 @@
 	background-color: var(--c-white);
 }
 
+.cycle .cycle__entry {
+	@include breakpoint-down(tablet) {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
+
 .cycle .cycle__entry p {
 	font-weight: 300;
+}
+
+.cycle .cycle__entry h3 {
+	@include breakpoint-down(tablet) {
+		font-size: 2.2rem;
+	}
 }
 
 .cycle .cycle__arrow {
@@ -20,18 +33,35 @@
 	top: calc(100% + -3.1rem);
 	width: 17.1rem;
 	transform: rotate(259deg);
+
+	@include breakpoint-down(tablet) {
+		right: calc(100% - 1.6rem);
+		top: calc(100% - 4rem);
+		width: 12rem;
+		height: 8rem;
+	}
 }
 
 .cycle .cycle__row .cell:nth-child(1) .cycle__entry {
 	z-index: 5;
 	margin: 1.8rem 0 0 7.8rem;
+
+	@include breakpoint-down(tablet) {
+		margin: 1.8rem 0 0;
+	}
 }
 
 .cycle .cycle__row .cell:nth-child(1) .cycle__arrow {
 	right: unset;
 	left: 15.3rem;
 	top: calc(100% - 1rem);
-	transform: rotate(175deg);;
+	transform: rotate(175deg);
+
+	@include breakpoint-down(tablet) {
+		right: unset;
+		left: 12.3rem;
+		top: calc(100% - -3rem);
+	}
 }
 
 .cycle .cycle__row .cell:nth-child(3) .cycle__entry {
@@ -45,6 +75,11 @@
 	top: unset;
 	bottom: 91%;
 	transform: rotate(2deg);
+
+	@include breakpoint-down(tablet) {
+		left: 1.9rem;
+		bottom: 130%;
+	}
 }
 
 .cycle .cycle__row + .cycle__entry {
@@ -57,6 +92,11 @@
 	top: -12.1rem;
 	left: calc(100% - 3.9rem);
 	transform: rotate(77deg);
+
+	@include breakpoint-down(tablet) {
+		top: -7.1rem;
+		left: calc(100% - 0.9rem);
+	}
 }
 
 .cycle .cycle__entry h3 {

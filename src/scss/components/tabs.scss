@@ -13,16 +13,32 @@
 	@include breakpoint-down(small-desktop) {
 		padding: 13.5rem 4rem 5rem 5rem;
 	}
+
+	@include breakpoint-down(tablet) {
+		padding: 0;
+		margin-bottom: 2rem;
+	}
 }
 
 .tabs .tabs__nav ul {
 	list-style-type: none;
+
+	@include breakpoint-down(tablet) {
+		margin-left: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 3rem;
+	}
 }
 
 .tabs .tabs__nav ul li {
 	position: relative;
 	isolation: isolate;
-	padding: 1.8rem 2rem 1.6rem 0;
+	padding: 2.2rem 2rem 2rem 0;
+
+	@include breakpoint-down(tablet) {
+		padding: 1.8rem 2rem 1.6rem;
+	}
 }
 
 .tabs .tabs__nav ul li:before {
@@ -42,6 +58,13 @@
 	transition: transform .2s ease-in-out;
 }
 
+.tabs .tabs__nav ul li:nth-child(even):before {
+	@include breakpoint-down(tablet) {
+		right: unset;
+		left: 0;
+	}
+}
+
 .tabs .tabs__nav ul li a {
 	text-decoration: none;
 	color: var(--c-purple);
@@ -54,6 +77,11 @@
 .tabs .tabs__body {
 	padding-left: .7rem;
 	max-width: 56.8rem;
+
+	@include breakpoint-down(tablet) {
+		padding-left: 0;
+		max-width: 100%;
+	}
 }
 
 .tabs .tab {

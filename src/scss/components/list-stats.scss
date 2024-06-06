@@ -5,6 +5,10 @@
 .list-stats {
 	list-style-type: none;
 	margin: 0 -1rem;
+
+	@include breakpoint-down(tablet) {
+		gap: 5rem 0;
+	}
 }
 
 .list-stats li {
@@ -15,7 +19,7 @@
 }
 
 .list-stats .list__entry {
-	margin-bottom: 4rem;
+	margin-bottom: 3.1rem;
 	font-size: 9.8rem;
 	font-weight: 600;
 	line-height: 1;
@@ -24,4 +28,8 @@
 	background-clip: text;
 	text-shadow: .3rem .3rem 0 #97EBD8, -.3rem -.3rem 0 #97EBD8, .3rem -.3rem 0 #97EBD8,
 	-.3rem .3rem 0 #97EBD8, .3rem .3rem 0 #97EBD8;
+
+	@include breakpoint-down(tablet) {
+		margin-bottom: 0;
+	}
 }

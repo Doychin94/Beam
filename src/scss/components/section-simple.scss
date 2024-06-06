@@ -4,44 +4,54 @@
 
 .section-simple {
 	padding: 5.4rem 0;
-}
 
-.section-simple .section__grid-container {
-	padding: 0 5rem 0 12rem;
-}
+	 .section__grid-container {
+		padding: 0 5rem 0 12rem;
+	}
 
-.section-simple .section__inner {
-	max-width: 109rem;
-	margin: 0 auto;
-}
+	 .section__inner {
+		max-width: 109rem;
+		margin: 0 auto;
+	}
 
-.section-simple .section__aside {
-	padding-right: 3.9rem;
-}
+	 .section__aside {
+		padding-right: 3.9rem;
 
-.section-simple .section__content {
-	max-width: 49rem;
-	margin-top: -0.9rem;
-}
+		@include breakpoint-down(tablet) {
+			padding-right: 0;
+			margin-bottom: 6rem;
+		}
+	}
 
-.section-simple h3 {
-	color: #6152D6;
-	margin-bottom: 2rem;
-	font-weight: 600;
-}
+	 .section__content {
+		max-width: 49rem;
+		margin-top: -0.9rem;
 
-.section-simple p:not(:last-child) {
-	margin-bottom: 1.5rem;
+		@include breakpoint-down(tablet) {
+			margin: 0;
+			max-width: unset;
+		}
+	}
+
+	 h3 {
+		color: #6152D6;
+		margin-bottom: 2rem;
+		font-weight: 600;
+	}
+
+	 p:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
 }
 
 /* section simple adjust */
 .section-simple--adjust {
 	padding: 5.9rem 0 4.8rem;
-}
 
-.section-simple--adjust .section__grid-container {
-	max-width: 121rem;
-	padding: 0 2rem;
+	.section__grid-container {
+		max-width: 121rem;
+		padding: 0 2rem;
+	}
 }
 
 /* section simple modify */
@@ -51,13 +61,18 @@
 	@include breakpoint-down(small-desktop) {
 		padding: 12rem 0 8rem;
 	}
-}
 
-.section-simple--modify .section__inner {
-	padding: 0 11.2rem 0 17.3rem;
-	max-width: unset;
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
 
-	@include breakpoint-down(small-desktop) {
-		padding: 0 2rem 0;
+	.section__inner {
+		padding: 0 11.2rem 0 17.3rem;
+		max-width: unset;
+
+		@include breakpoint-down(small-desktop) {
+			padding: 0 2rem 0;
+		}
 	}
 }
+

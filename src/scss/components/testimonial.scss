@@ -11,22 +11,26 @@
 	gap: 5.2rem;
 	background-color: var(--c-purple);
 	color: var(--c-white);
-}
 
-.testimonial blockquote {
-	padding: 0;
-	margin: 0;
-	border: none;
-	color: var(--c-white);
-}
+	@include breakpoint-down(tablet) {
+		padding: 3rem 2rem;
+	}
 
-.testimonial blockquote p {
-	color: var(--c-white);
-	line-height: 1.28;
-}
+	 blockquote {
+		padding: 0;
+		margin: 0;
+		border: none;
+		color: var(--c-white);
+	}
 
-.testimonial .testimonial__author {
-	display: inline-block;
-	margin-left: auto;
-	padding-right: 1.3rem;
+	 blockquote p {
+		color: var(--c-white);
+		line-height: 1.28;
+	}
+
+	 .testimonial__author {
+		display: inline-block;
+		margin-left: auto;
+		padding-right: 1.3rem;
+	}
 }

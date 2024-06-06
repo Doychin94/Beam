@@ -4,12 +4,20 @@
 
 .section-approach {
 	padding: 9rem 0;
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
 }
 
 .section-approach .section__head {
 	max-width: 69.3rem;
 	margin: 0 auto 7.8rem;
 	text-align: center;
+
+	@include breakpoint-down(tablet) {
+		margin-bottom: 4rem;
+	}
 }
 
 .section-approach h1 {
@@ -20,6 +28,10 @@
 
 .section-approach .section__entry {
 	margin-bottom: 7.9rem;
+
+	@include breakpoint-down(tablet) {
+		margin-bottom: 5rem;
+	}
 }
 
 .section-approach .section__head h3 {
@@ -31,4 +43,9 @@
 	max-width: 109rem;
 	margin: 0 auto;
 	padding-left: 0.7rem;
+
+	@include breakpoint-down(tablet) {
+		padding-left: 0;
+		max-width: 73.5rem;
+	}
 }

@@ -5,19 +5,28 @@
 .section-tabs {
 	padding: 8.1rem 0 8.5rem;
 	background-color: #E8E9F9;
-	overflow: hidden
+	overflow: hidden;
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	.section__head {
+		color: #2A2A2A;
+		max-width: 83rem;
+		margin: 0 auto 8.8rem;
+		text-align: center;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 5rem;
+		}
+	}
+
+	h2 {
+		max-width: 57.8rem;
+		margin: 0 auto 1.6rem;
+		color: var(--c-purple-dark);
+		font-weight: 600;
+	}
 }
 
-.section-tabs .section__head {
-	color: #2A2A2A;
-	max-width: 83rem;
-	margin: 0 auto 8.8rem;
-	text-align: center;
-}
-
-.section-tabs h2 {
-	max-width: 57.8rem;
-	margin: 0 auto 1.6rem;
-	color: var(--c-purple-dark);
-	font-weight: 600;
-}

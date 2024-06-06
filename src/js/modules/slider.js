@@ -15,7 +15,7 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 		const sliderContainer = $slider.find('.slider__clip')[0];
 
 		const swiper = new Swiper(sliderContainer,{
-			loop: true,
+			loop: false,
 			speed: 500,
 			spaceBetween: 45,
 			slidesPerView: 1,

@@ -9,6 +9,10 @@
 	z-index: 100;
 
 	@include breakpoint-down(tablet) {
+		padding: 3rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
 		overflow: unset;
 	}
 
@@ -28,6 +32,15 @@
 		top: 1rem;
 		left: -.5rem;
 		z-index: 10;
+
+		@include breakpoint-down(tablet) {
+			top: 0;
+			left: 0;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 20rem;
+		}
 	}
 
 	.header__menu {

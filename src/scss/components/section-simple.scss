@@ -5,6 +5,10 @@
 .section-simple {
 	padding: 5.4rem 0;
 
+	@include breakpoint-down(mobile) {
+		padding: 2.5rem 0;
+	}
+
 	 .section__grid-container {
 		padding: 0 5rem 0 12rem;
 	}
@@ -20,6 +24,10 @@
 		@include breakpoint-down(tablet) {
 			padding-right: 0;
 			margin-bottom: 6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
 		}
 	}
 

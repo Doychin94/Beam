@@ -29,6 +29,16 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 0 3rem;
 	}
+
+	@include breakpoint-down(mobile) {
+		margin: 0 -2rem;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 0 -2rem;
+		white-space: nowrap;
+		overflow: auto;
+		padding: 0 2rem;
+	}
 }
 
 .tabs .tabs__nav ul li {
@@ -38,6 +48,7 @@
 
 	@include breakpoint-down(tablet) {
 		padding: 1.8rem 2rem 1.6rem;
+		align-self: center;
 	}
 }
 
@@ -56,12 +67,21 @@
 	pointer-events: none;
 	transform: scale(0,1);
 	transition: transform .2s ease-in-out;
+
+	@include breakpoint-down(mobile) {
+		width: 100%;
+	}
 }
 
 .tabs .tabs__nav ul li:nth-child(even):before {
 	@include breakpoint-down(tablet) {
 		right: unset;
 		left: 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		right: 0;
+		left: unset;
 	}
 }
 

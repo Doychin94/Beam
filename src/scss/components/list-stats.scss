@@ -9,6 +9,10 @@
 	@include breakpoint-down(tablet) {
 		gap: 5rem 0;
 	}
+
+	@include breakpoint-down(mobile) {
+		gap: 3rem 0;
+	}
 }
 
 .list-stats li {
@@ -31,5 +35,9 @@
 
 	@include breakpoint-down(tablet) {
 		margin-bottom: 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		font-size: 7rem;
 	}
 }

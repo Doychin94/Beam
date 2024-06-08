@@ -14,7 +14,7 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 		const $slider = $(slider);
 		const sliderContainer = $slider.find('.slider__clip')[0];
 
-		const swiper = new Swiper(sliderContainer,{
+		const swiper = new Swiper(sliderContainer, {
 			loop: false,
 			speed: 500,
 			spaceBetween: 45,
@@ -24,15 +24,15 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 				el: $slider.find('.slider__pagination')[0],
 				clickable: true,
 				renderBullet: function (index, className) {
-				  return '<span class="' + className + '">' + "</span>";
+					return '<span class="' + className + '">' + '</span>';
 				},
-			  },
+			},
 			...additionalOptions,
 		});
 
 		if (isMethod) {
-			swiper.on('slideChangeTransitionEnd', function(event) {
-				const activeIndex = swiper.activeIndex -1;
+			swiper.on('slideChangeTransitionEnd', function () {
+				const activeIndex = swiper.activeIndex - 1;
 				const activeSlide = $(swiper.slides[activeIndex]);
 				const $video = activeSlide.find('.js-video');
 				const player = players.get($video[0]);
@@ -41,7 +41,7 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 					player.pause();
 					$video.removeClass('is-playing');
 				}
-			})
+			});
 		}
 	});
 };
@@ -49,33 +49,31 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 /**
  * Init slider.
  */
-initSwiper($('.js-slider'), {}, true)
+initSwiper($('.js-slider'), {}, true);
 
 /**
  * Init slider patterns.
  */
 
-$('.js-slider-patterns').each((index,slider) => {
+$('.js-slider-patterns').each((index, slider) => {
 	const $slider = $(slider);
-		const sliderContainer = $slider.find('.slider__clip')[0];
+	const sliderContainer = $slider.find('.slider__clip')[0];
 
-		 new Swiper(sliderContainer,{
-			effect: 'fade',
-			speed: 400,
-			spaceBetween: 0,
-			slidesPerView: 1,
-			allowTouchMove: true,
-			pagination: {
-				el: Array.from($slider[0].querySelectorAll('.slider__pagination')),
-				clickable: true,
-				renderBullet: function (index, className) {
-				  return '<span class="' + className + '">' + "</span>";
-				},
-			  },
-		});
+	new Swiper(sliderContainer, {
+		effect: 'fade',
+		speed: 400,
+		spaceBetween: 0,
+		slidesPerView: 1,
+		allowTouchMove: true,
+		pagination: {
+			el: Array.from($slider[0].querySelectorAll('.slider__pagination')),
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + '</span>';
+			},
+		},
+	});
 });
-
-
 
 /**
  * Init slider cycle.
@@ -83,7 +81,8 @@ $('.js-slider-patterns').each((index,slider) => {
 initSwiper($('.js-slider-cycle'), {
 	effect: 'fade',
 	speed: 400,
-})
+	allowTouchMove: false,
+});
 
 /**
  * Init slider testimonials.
@@ -93,4 +92,4 @@ initSwiper($('.js-slider-testimonials'), {
 	spaceBetween: 27,
 	loop: false,
 	freeMode: true,
-})
+});

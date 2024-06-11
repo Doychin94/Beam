@@ -6,10 +6,6 @@
 	padding: 18.8rem 0 10rem;
 
 	@include breakpoint-down(small-desktop) {
-		padding: 8rem 0;
-	}
-
-	@include breakpoint-down(tablet) {
 		padding: 5rem 0;
 	}
 
@@ -19,6 +15,16 @@
 
 	.section__row ~ .section__row {
 		margin-top: 13rem;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 5rem;
+		}
+	}
+
+	.section__row {
+		@include breakpoint-down(tablet) {
+			display: block;
+		}
 	}
 
 	/* section row reversed */
@@ -30,6 +36,10 @@
 		padding-left: 0;
 		padding-right: 8.1rem;
 		margin-top: 0;
+
+		@include breakpoint-down(small-desktop) {
+			padding-right: 4rem;
+		}
 	}
 
 	.section__row--reverse .section__aside {
@@ -38,6 +48,16 @@
 
 	.section__aside {
 		max-width: 53.8rem;
+
+		@include breakpoint-down(tablet) {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.section__image {
@@ -59,6 +79,16 @@
 		margin-top: -3rem;
 		padding-right: 5rem;
 		flex: 1;
+
+		@include breakpoint-down(small-desktop) {
+			padding-left: 4rem;
+			margin-top: 0;
+			padding-right: 0;
+		}
+
+		@include breakpoint-down(tablet) {
+			padding: 0;
+		}
 	}
 
 	.section__content h3 {
@@ -66,9 +96,17 @@
 		font-weight: 600;
 		line-height: 1.25;
 		margin-bottom: 2.6rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 1.5rem;
+		}
 	}
 
 	.section__list-features {
 		margin-left: 2.8rem;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 2rem;
+		}
 	}
 }

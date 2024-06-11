@@ -6,11 +6,11 @@
 	padding: 7rem 0 10rem;
 
 	@include breakpoint-down(small-desktop) {
-		padding: 7rem 0;
+		padding: 5rem 0;
 	}
 
-	@include breakpoint-down(tablet) {
-		padding: 5rem 0;
+	@include breakpoint-down(mobile) {
+		padding: 2.5rem 0 5rem;
 	}
 
 	.section__grid-container {
@@ -21,14 +21,26 @@
 		max-width: 53.4rem;
 		margin-bottom: 5.8rem;
 		color: var(--c-black);
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	.section__logo {
 		margin-bottom: 3.5rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.section__body {
 		margin-bottom: 7rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	.section__bar {
@@ -36,9 +48,25 @@
 		align-items: center;
 		gap: 4rem;
 		color: var(--c-black);
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 
 	.section__bar p {
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.section__btn-gray {
+		min-width: 19.6rem;
+
+		@include breakpoint-down(mobile-medium) {
+			min-width: unset;
+		}
 	}
 }

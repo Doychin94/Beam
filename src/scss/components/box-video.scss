@@ -22,8 +22,24 @@
 		}
 	}
 
+	.video__btn {
+		@include breakpoint-down(small-desktop) {
+			max-width: 6rem;
+			height: 6rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			max-width: 10rem;
+			width: 10rem;
+		}
+	}
+
 	.box__video {
 		aspect-ratio: 410 / 192;
+
+		@include breakpoint-down(tablet) {
+			aspect-ratio: 16 / 9;
+		}
 	}
 
 	.box__content {

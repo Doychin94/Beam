@@ -34,6 +34,10 @@
 	background-color: var(--c-purple);
 	color: var(--c-white);
 
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
 	h2 {
 		color: var(--c-white);
 		margin-bottom: 2rem;

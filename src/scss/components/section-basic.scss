@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	section-basic
+\* ------------------------------------------------------------ */
+
+.section-basic {
+	padding: 10.7rem 0 12rem;
+	background-color: #E8E9F9;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	.section__content {
+		padding-top: 2.4rem;
+
+		@include breakpoint-down(mobile-medium) {
+			padding-top: 0;
+		}
+	}
+
+	.section__aside {
+		padding-left: 4.4rem;
+		max-width: 46.5%;
+		padding-right: 4rem;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 100%;
+			padding: 0;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.section__content h3 {
+		color: var(--c-purple-dark);
+		font-weight: 600;
+		margin-bottom: 2rem;
+	}
+
+	.section__entry {
+		margin-bottom: 3.7rem;
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 2rem;
+		}
+	}
+}

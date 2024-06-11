@@ -16,6 +16,11 @@
 	@include breakpoint-down(tablet) {
 		padding: 6rem 2rem;
 	}
+
+	@include breakpoint-down(mobile) {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .form .form__title {
@@ -29,11 +34,25 @@
 }
 
 .form .form__cols {
-	margin: 0 -1.4rem
+	margin: 0 -1.4rem;
+
+	@include breakpoint-down(mobile-medium) {
+		margin: 0;
+	}
 }
 
 .form .form__col {
 	padding: 0 1.4rem;
+
+	@include breakpoint-down(mobile-medium) {
+		padding: 0;
+	}
+}
+
+.form .form__col ~ .form__col {
+	@include breakpoint-down(mobile-medium) {
+		margin-top: 2.1rem;
+	}
 }
 
 .form .form__label {
@@ -65,6 +84,11 @@
 	@include breakpoint-down(tablet) {
 		padding-left: 0;
 	}
+
+	@include breakpoint-down(mobile) {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .form .form__aside-inner {
@@ -72,6 +96,10 @@
 	background-color: var(--c-purple);
 	padding: 8.2rem 4.6rem 9rem;
 	color: var(--c-white);
+
+	@include breakpoint-down(mobile) {
+		padding: 5.2rem 2rem 4rem;
+	}
 }
 
 .form .form__image {
@@ -81,6 +109,11 @@
 	overflow: hidden;
 	margin: 0 auto 6rem;
 	position: relative;
+
+	@include breakpoint-down(mobile) {
+		max-width: 20rem;
+		margin-bottom: 4rem;
+	}
 }
 
 .form .form__image img {

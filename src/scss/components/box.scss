@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+	box
+\* ------------------------------------------------------------ */
+
+.box {
+	position: relative;
+	color: var(--c-purple);
+
+	&:hover .box__image img {
+		transform: scale(1.05);
+	}
+
+	.box__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+	}
+
+	.box__image {
+		position: relative;
+		padding-top: 122.9%;
+		overflow: hidden;
+		margin-bottom: 1.8rem;
+	}
+
+	.box__image img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+		transition: transform var(--t-duration) ease-in-out;
+	}
+
+	.box__name {
+		font-weight: 600;
+		display: block;
+	}
+
+	.box__position {
+		display: block;
+	}
+}

@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	section-video
+\* ------------------------------------------------------------ */
+
+.section-video {
+	padding: 8.1rem 0 14rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	.section__grid-container {
+		max-width: 93.7rem;
+	}
+}

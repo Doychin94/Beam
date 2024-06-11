@@ -74,6 +74,10 @@
 .section-purple--modify {
 	padding: 4.3rem 0 5.6rem;
 
+	@include breakpoint-down(mobile-medium) {
+		padding: 4rem 0;
+	}
+
 	.section__inner {
 		max-width: unset;
 		padding-left: 8.7rem;
@@ -83,11 +87,23 @@
 		@include breakpoint-down(tablet) {
 			padding: 0;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			position: relative;
+			height: 100%;
+			padding-bottom: 5rem;
+			display: block;
+		}
 	}
 
 	.section__aside {
 		max-width: unset;
 		padding-right: 5rem;
+
+		@include breakpoint-down(mobile-medium) {
+			padding-right: 0;
+			margin-bottom: 4rem;
+		}
 	}
 
 	.section__content {
@@ -104,6 +120,11 @@
 			padding-top: 0;
 			max-width: 100%;
 			margin-bottom: 0;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			position: static;
+			padding-bottom: 2rem;
 		}
 	}
 

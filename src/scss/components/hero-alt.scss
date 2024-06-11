@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	hero-alt
+\* ------------------------------------------------------------ */
+
+.hero-alt {
+	padding: 8rem 0 5rem;
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0 2rem;
+	}
+
+	.hero__grid-container {
+		max-width: 118rem;
+	}
+
+	.hero__inner {
+		min-height: 44.7rem;
+		position: relative;
+	}
+
+	.hero__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.hero__image img {
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+	}
+}

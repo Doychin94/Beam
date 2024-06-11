@@ -53,3 +53,42 @@
 	}
 }
 
+/* section purple */
+.section--purple {
+	padding: 4.1rem 0 16.6rem;
+	background-color: var(--c-purple);
+	color: var(--c-white);
+
+	@include breakpoint-down(small-desktop) {
+		padding-bottom: 8rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 2.5rem 0;
+	}
+
+	.section__bar {
+		max-width: 60%;
+		color: var(--c-white);
+		margin-bottom: 6.7rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 4rem;
+			max-width: 80%;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
+			max-width: 100%;
+		}
+	}
+
+	h2 {
+		font-weight: 600;
+	}
+}
+

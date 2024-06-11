@@ -10,10 +10,12 @@
 
 	@include breakpoint-down(tablet) {
 		padding: 3rem 0;
+		overflow: unset;
+
 	}
 
-	@include breakpoint-down(tablet) {
-		overflow: unset;
+	@include breakpoint-down(mobile-medium) {
+		padding: 2rem 0;
 	}
 
 	.header__inner {
@@ -29,7 +31,7 @@
 	}
 
 	.header__logo {
-		top: 1rem;
+		top: -.2rem;
 		left: -.5rem;
 		z-index: 10;
 
@@ -40,6 +42,10 @@
 
 		@include breakpoint-down(mobile) {
 			max-width: 20rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 15rem;
 		}
 	}
 
@@ -123,6 +129,63 @@
 	&.menu-visible .header__logo img {
 		opacity: 1;
 	}
-
 }
 
+/* header with smaller offset */
+.header--offset {
+	padding-bottom: 2.9rem;
+
+
+	@include breakpoint-down(tablet) {
+		padding: 3rem 0;
+
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		padding: 2rem 0;
+	}
+}
+
+/* header purple */
+.header--purple {
+	background-color: var(--c-purple);
+	color: var(--c-white);
+
+	.header__menu {
+		@include breakpoint-down(tablet) {
+			background-color: var(--c-purple);
+		}
+	}
+
+	.header__nav {
+		color: var(--c-white);
+	}
+
+	.header__nav-secondary {
+		color: var(--c-white);
+	}
+
+	.header__nav-secondary > ul > li.is-current {
+		color: var(--c-purple-2);
+	}
+
+	.header__nav-secondary > ul > li.is-current:before {
+		background-color: var(--c-white);
+	}
+
+	.header__nav-trigger span {
+		background-color: var(--c-white);
+	}
+
+	.header__nav-trigger:hover span {
+		@media (hover: hover) {
+			color: var(--c-white);
+		}
+	}
+
+	.header__nav-trigger:hover span:not(:last-child) {
+		@media (hover: hover) {
+			background-color: var(--c-white);
+		}
+	}
+}

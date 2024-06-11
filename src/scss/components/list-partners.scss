@@ -16,6 +16,8 @@
 
 	@include breakpoint-down(mobile) {
 		grid-template-columns: 1fr;
+		gap: 5rem 0;
+		grid-auto-rows: unset;
 	}
 
 	li {
@@ -29,6 +31,22 @@
 
 		@include breakpoint-down(tablet) {
 			align-items: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+	}
+
+	li strong {
+		@include breakpoint-down(mobile) {
+			display: block;
+			margin-bottom: 1.5rem;
+			font-size: 2.2rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.8rem;
 		}
 	}
 }

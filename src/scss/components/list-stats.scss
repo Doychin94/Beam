@@ -41,3 +41,19 @@
 		font-size: 7rem;
 	}
 }
+
+/* list-stats--white */
+.list-stats--white li {
+	color: var(--c-white);
+	font-weight: 400;
+
+	.list__entry {
+		background: none;
+		text-shadow: unset;
+		margin-bottom: .9rem;
+
+		@include breakpoint-down(tablet) {
+			margin-bottom: 0;
+		}
+	}
+}

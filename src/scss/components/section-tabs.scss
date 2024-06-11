@@ -30,3 +30,13 @@
 	}
 }
 
+/* section tabs adjust */
+.section-tabs--adjust {
+	padding: 10.4rem 0 4.6rem;
+	background-color: var(--c-white);
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+}
+

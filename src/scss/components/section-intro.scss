@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	section-intro
+\* ------------------------------------------------------------ */
+
+.section-intro {
+	padding: 13.3rem 0 12.4rem;
+	background-color: #E8E9F9;
+	color: #2a2a2a;
+	text-align: center;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	h2 {
+		color: var(--c-purple-dark);
+		margin-bottom: 1.6rem;
+		font-weight: 600;
+	}
+}

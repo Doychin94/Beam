@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------ *\
+	section-slider
+\* ------------------------------------------------------------ */
+
+.section-slider {
+	padding: 10.4rem 0;
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		padding: 5rem 0 2.5rem;
+	}
+
+	.section__grid-container {
+		max-width: 88.8rem;
+	}
+
+	.section__inner {
+		padding-left: 1.6rem;
+
+		@include breakpoint-down(mobile-medium) {
+			position: relative;
+			height: 100%;
+			padding: 0;
+			display: block;
+		}
+	}
+
+	.section__aside {
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 4rem;
+			text-align: center;
+		}
+	}
+
+	.section__content {
+		margin-top: -1.2rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 0 0 15.7rem 6rem;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			position: static;
+			padding: 0 0 6rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 3rem;
+		}
+	}
+
+	.section__content h3 {
+		color: #6152D6;
+		font-weight: 600;
+		line-height: 1.28;
+		margin-bottom: 1.7rem;
+	}
+
+	.section__list-downloads {
+		position: absolute;
+		left: 6rem;
+		bottom: .5rem;
+		gap: 1.1rem;
+
+		@include breakpoint-down(mobile-medium) {
+			position: static;
+		}
+	}
+}

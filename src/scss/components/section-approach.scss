@@ -48,4 +48,12 @@
 		padding-left: 0;
 		max-width: 73.5rem;
 	}
+
+	@include breakpoint-down(mobile) {
+		max-width: 53.5rem;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		max-width: 33.6rem;
+	}
 }

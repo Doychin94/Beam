@@ -3,7 +3,7 @@
 \* ------------------------------------------------------------ */
 
 .section-form {
-	padding: 8rem 0 4rem;
+	padding: 8rem 0;
 	position: relative;
 
 	@include breakpoint-down(tablet) {
@@ -17,7 +17,7 @@
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		height: 32rem;
+		height: 36rem;
 		background-color: var(--c-purple-dark);
 
 		@include breakpoint-down(tablet) {

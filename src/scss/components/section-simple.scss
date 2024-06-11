@@ -56,6 +56,10 @@
 .section-simple--adjust {
 	padding: 5.9rem 0 4.8rem;
 
+	@include breakpoint-down(mobile) {
+		padding: 5rem 0;
+	}
+
 	.section__grid-container {
 		max-width: 121rem;
 		padding: 0 2rem;
@@ -81,6 +85,33 @@
 		@include breakpoint-down(small-desktop) {
 			padding: 0 2rem 0;
 		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 5rem 0 2rem;
+		}
+	}
+}
+
+/* section offset */
+.section-simpe--offset {
+	padding: 12.7rem 0 11rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 12rem 0 8rem;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
+	}
+}
+
+/* section simple beige */
+.section-simple--beige {
+	padding: 9rem 0 6rem;
+	background-color: rgba(101, 110, 214, .15);
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 0;
 	}
 }
 

@@ -25,12 +25,16 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 				clickable: true,
 				renderBullet: function (index, className) {
 					return '<span class="' + className + '">' + '</span>';
+					return '<span class="' + className + '">' + '</span>';
 				},
+			},
 			},
 			...additionalOptions,
 		});
 
 		if (isMethod) {
+			swiper.on('slideChangeTransitionEnd', function () {
+				const activeIndex = swiper.activeIndex - 1;
 			swiper.on('slideChangeTransitionEnd', function () {
 				const activeIndex = swiper.activeIndex - 1;
 				const activeSlide = $(swiper.slides[activeIndex]);
@@ -41,7 +45,7 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 					player.pause();
 					$video.removeClass('is-playing');
 				}
-			});
+			});;
 		}
 	});
 };
@@ -50,13 +54,16 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
  * Init slider.
  */
 initSwiper($('.js-slider'), {}, true);
+initSwiper($('.js-slider'), {}, true);
 
 /**
  * Init slider patterns.
  */
 
 $('.js-slider-patterns').each((index, slider) => {
+$('.js-slider-patterns').each((index, slider) => {
 	const $slider = $(slider);
+	const sliderContainer = $slider.find('.slider__clip')[0];
 	const sliderContainer = $slider.find('.slider__clip')[0];
 
 	new Swiper(sliderContainer, {

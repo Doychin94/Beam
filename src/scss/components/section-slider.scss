@@ -35,6 +35,11 @@
 		}
 	}
 
+	.section__aside img {
+		filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, .25));
+		transform: translateZ(.1rem)
+	}
+
 	.section__content {
 		margin-top: -1.2rem;
 		position: relative;

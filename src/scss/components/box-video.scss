@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	box-video
+\* ------------------------------------------------------------ */
+
+.box-video {
+	position: relative;
+	height: 100%;
+	background-color: var(--c-white);
+	-webkit-box-shadow: 0px 14px 40px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 14px 40px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 14px 40px 0px rgba(0,0,0,0.15);
+
+	.box__link {
+		display: inline-block;
+		text-decoration: none;
+		transition: color var(--t-duration) ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				color: var(--c-purple);
+			}
+		}
+	}
+
+	.box__video {
+		aspect-ratio: 410 / 192;
+	}
+
+	.box__content {
+		padding: 2rem 20% 3rem 1.6rem;
+	}
+
+	.box__title {
+		color: var(--c-black);
+		font-weight: 600;
+		margin-bottom: 1.1rem;
+	}
+
+	.box__entry {
+		margin-bottom: 2rem;
+	}
+}

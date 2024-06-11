@@ -16,9 +16,26 @@
 		padding: 5rem 0;
 	}
 
+	.section__inner {
+		max-width:81rem;
+		margin: 0 auto;
+	}
+
 	h2 {
 		color: var(--c-purple-dark);
 		margin-bottom: 1.6rem;
 		font-weight: 600;
+	}
+}
+
+/* section intro purple */
+.section-intro--purple {
+	padding: 4.6rem 0 8.5rem;
+	background-color: var(--c-purple);
+	color: var(--c-white);
+
+	h2 {
+		color: var(--c-white);
+		margin-bottom: 2rem;
 	}
 }

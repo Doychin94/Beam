@@ -105,7 +105,7 @@
 		width: unset;
 		transform: none;
 
-		@include breakpoint-down(tablet) {
+		@include breakpoint-down(mobile-medium) {
 			bottom: 0;
 			left: 0;
 		}

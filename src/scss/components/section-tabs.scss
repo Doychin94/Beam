@@ -36,7 +36,7 @@
 	background-color: var(--c-white);
 
 	@include breakpoint-down(tablet) {
-		padding: 5rem 0;
+		padding: 5rem 0 2rem;
 	}
 }
 

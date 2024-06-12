@@ -16,6 +16,10 @@
 		padding: 5rem 0;
 	}
 
+	@include breakpoint-down(mobile) {
+		padding: 2rem 0;
+	}
+
 	.section__inner {
 		max-width:81rem;
 		margin: 0 auto;
@@ -35,7 +39,7 @@
 	color: var(--c-white);
 
 	@include breakpoint-down(tablet) {
-		padding: 5rem 0;
+		padding: 1rem 0 2rem;
 	}
 
 	h2 {

@@ -19,7 +19,6 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 			speed: 500,
 			spaceBetween: 45,
 			slidesPerView: 1,
-			touchReleaseOnEdges: true,
 			allowTouchMove: true,
 			pagination: {
 				el: $slider.find('.slider__pagination')[0],
@@ -65,7 +64,6 @@ $('.js-slider-patterns').each((index, slider) => {
 		speed: 400,
 		spaceBetween: 0,
 		slidesPerView: 1,
-		allowTouchMove: false,
 		pagination: {
 			el: Array.from($slider[0].querySelectorAll('.slider__pagination')),
 			clickable: true,
@@ -82,7 +80,6 @@ $('.js-slider-patterns').each((index, slider) => {
 initSwiper($('.js-slider-cycle'), {
 	effect: 'fade',
 	speed: 400,
-	allowTouchMove: false,
 });
 
 /**

@@ -19,6 +19,7 @@ const initSwiper = ($sliders, additionalOptions, isMethod) => {
 			speed: 500,
 			spaceBetween: 45,
 			slidesPerView: 1,
+			touchReleaseOnEdges: true,
 			allowTouchMove: true,
 			pagination: {
 				el: $slider.find('.slider__pagination')[0],

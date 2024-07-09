@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ *\
+	ticker
+\* ------------------------------------------------------------ */
+
+.ticker {
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		z-index: 2;
+		background-image: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0));
+		width: 16rem;
+	}
+
+	&:after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		z-index: 2;
+		background-image: linear-gradient(270deg, #fff, rgba(255, 255, 255, 0));
+		width: 16rem;
+	}
+
+	.ticker__inner {
+		display: flex;
+	}
+
+	ul {
+		flex-shrink: 0;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+	}
+
+	ul li {
+		flex-shrink: 0;
+		padding: 0 3rem;
+	}
+
+	/* is animated */
+	&.is-animated .ticker__inner {
+		animation: ticker 20s linear infinite;
+	}
+
+	&.is-animated .ticker__inner:hover {
+		animation-play-state: paused;
+	}
+}

@@ -14,6 +14,11 @@
 	font-weight: 700;
 	color: var(--c-white);
 	transition: opacity var(--t-duration) ease-in-out;
+
+	&:focus {
+		opacity: .8;
+		color: var(--c-white);
+	}
 }
 
 .btn-primary:hover {
@@ -39,12 +44,23 @@
 /* btn primary purple-light */
 .btn-primary--purple-light {
 	background-color: var(--c-purple);
+
+	&:focus {
+		opacity: .8;
+		color: var(--c-white);
+	}
 }
 
 /* btn primary white */
 .btn-primary--white {
 	background-color: var(--c-white);
 	color: var(--c-purple-2);
+
+	&:focus {
+		opacity: .8;
+		background-color: var(--c-white);
+		color: var(--c-purple-2);
+	}
 }
 
 .btn-primary--white:hover {
